@@ -1,0 +1,11 @@
+Characteristic,Total,Female,Male,Unknown Sex
+Total,1183505,644002,539472,31
+"Management, professional, and related occupations",115961,45218,70742,1
+Service occupations,29464,14090,15373,1
+Sales and office occupations,44295,21556,22736,3
+"Farming, fishing, and forestry occupations",13168,2426,10742,-
+"Construction, extraction, maintenance, and repair occupations",12213,697,11516,-
+"Production, transportation, and material moving occupations",43268,8105,35163,-
+Military,74,19,55,-
+No occupation/not working outside home,565255,361965,203268,22
+Unknown,359807,189926,169877,4

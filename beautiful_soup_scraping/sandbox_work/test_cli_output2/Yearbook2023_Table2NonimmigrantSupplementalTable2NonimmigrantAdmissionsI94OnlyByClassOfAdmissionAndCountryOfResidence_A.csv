@@ -1,0 +1,66 @@
+Class,Description,Total of all regions,Africa,Asia,Central America,Europe,North America,Oceania,South America,All other countries [1],Unknown
+Total,Total of all classes,68227240,628330,8870710,1438790,14045260,36646080,1373760,5013240,13110,198020
+A1,"Foreign government officials and families: ambassadors, public ministers, career diplomats, or consular officers",41800,2420,8900,2150,9420,15350,960,2140,360,170
+A2,Foreign government officials and families: other foreign government officials or employees,175880,14070,61130,4530,38550,31990,11260,13160,910,310
+A3,"Foreign government officials and families: attendants, servants, or personal employees of A-1 and A-2 classes",870,50,520,50,20,110,10,50,10,0
+B1,Temporary visitors: for business,4883380,63900,478700,104340,193250,3803910,8780,224590,840,5190
+B2,Temporary visitors: for pleasure,37058780,382540,3065340,1199900,717720,27706990,65560,3746810,3370,170660
+C1,Transit individuals: foreign nationals in transit,696660,17350,192260,10830,56770,389290,4890,22470,280,2580
+C2,Transit individuals: foreign nationals in transit to the United Nations,780,40,80,0,10,570,0,10,0,0
+C3,Transit individuals: foreign government officials and families in transit,9130,430,2040,1470,880,2010,650,1490,190,0
+CW1,Transitional workers: Northern Mariana Islands,2060,0,2000,0,10,30,0,0,10,0
+CW2,Transitional workers: spouses and children of transitional workers in the Northern Mariana Islands,500,0,460,0,0,10,0,0,0,0
+E1,Treaty traders and investors: treaty traders [2],77810,0,12920,180,7990,55570,120,1020,10,20
+E1S,Spouses of treaty traders [3],1520,0,450,0,180,810,10,20,0,0
+E1Y,Children of treaty traders [4],890,0,350,0,90,390,0,20,0,0
+E2,Treaty traders and investors: treaty investors [5],412620,290,117340,1290,82330,199740,2250,9160,50,250
+E2C,"Treaty traders and investors: treaty investors, Northern Mariana Islands",70,0,50,0,0,0,0,0,10,0
+E2S,Spouses of treaty investors [6],10240,10,3450,30,2500,3820,70,370,0,0
+E2Y,Children of treaty investors [7],5280,0,2040,20,1040,1940,60,160,0,0
+E3,Treaty traders and investors: Australian Free Trade Agreement [8],37170,20,470,0,600,10730,25300,10,0,10
+E3S,Spouses of Australian Free Trade Agreement principals [9],6350,20,510,20,500,1880,3350,70,10,0
+E3Y,Children of Australian Free Trade Agreement principals [10],3780,0,120,0,140,1000,2480,10,0,0
+F1,Students and exchange visitors: academic students,1625740,46510,793130,20650,158720,508160,10530,84490,660,3030
+F2,Students and exchange visitors: spouses and children of academic students,61910,3840,29730,490,2380,17060,140,8130,50,100
+F3,Students and exchange visitors: Canadian or Mexican national academic commuter students,730,0,0,0,0,740,0,0,0,0
+G1,Representatives to international organizations and families: principals of recognized foreign governments,15930,1720,3080,350,4710,4500,270,1070,190,50
+G2,Representatives to international organizations and families: other representatives of recognized foreign governments,20900,6440,5320,130,4840,1860,320,1310,690,120
+G3,Representatives to international organizations and families: representatives of nonrecognized or nonmember foreign governments,1150,10,10,0,740,160,0,220,10,0
+G4,Representatives to international organizations and families: international organization officers or employees,121370,11480,20300,2770,32640,37020,2030,13660,450,1090
+G5,"Attendants, servants or personal employees of representatives",390,20,100,30,10,60,0,110,0,0
+GMB,"Temporary visitors: for business, visa waiver, Guam or Northern Mariana Islands",820,0,760,0,10,0,50,0,0,0
+GMT,"Temporary visitors: for pleasure, visa waiver, Guam or Northern Mariana Islands",537440,20,533830,0,60,1900,1200,10,400,0
+H1B,Temporary workers and trainees: specialty occupations,755020,6580,440150,2490,31420,253680,2460,17580,190,520
+H1B1,Temporary workers and trainees: Chile and Singapore Free Trade Agreement,2510,0,1230,0,10,370,0,890,0,0
+H2A,Temporary workers and trainees: seasonal agricultural workers,718530,13000,100,6290,750,696590,80,1610,50,20
+"H2B, H2R","Temporary workers and trainees: seasonal nonagricultural workers, returning H-2B workers",175270,1890,4080,22390,2950,141890,70,720,0,1310
+H3,Temporary workers and trainees: trainees,1350,0,370,20,290,520,30,90,0,0
+H4,"Temporary workers and trainees: spouses and children of H-1, H-2, and H-3 workers",286120,2540,199760,580,5680,69970,690,6670,70,150
+I1,Representatives of foreign information media and families,32470,760,5250,510,14310,9270,690,1640,10,70
+J1,Students and exchange visitors: exchange visitors,481280,14880,117780,3740,157290,108600,5740,70480,390,2470
+J2,Students and exchange visitors: spouses and children of exchange visitors,62000,2000,28590,450,9850,15460,380,5130,20,100
+K1,Fiance(e)s of U.S. citizens,18660,1940,6620,520,1890,5410,170,2030,40,70
+K2,Children of fiance(e)s of U.S. citizens,3050,160,940,120,190,1130,0,480,0,0
+L1,Intracompany transferees: principals,503490,4740,102300,4320,108730,246380,5270,31130,60,690
+L2,Intracompany transferees: spouses and children of intracompany transferees [11],390,10,50,0,50,190,10,40,0,0
+L2S,Spouses of L1 [12],148290,1810,41260,1280,28470,59420,1580,14310,20,170
+L2Y,Children of L1 [13],100000,1360,32870,710,20580,35260,1200,7950,20,90
+M1,Students and exchange visitors: vocational students,11770,390,4520,180,2450,2790,220,1160,30,10
+M2,Students and exchange visitors: spouses and children of vocational students,860,0,90,0,80,550,20,70,0,0
+N1 to N7,NATO officials and families,59050,10,420,0,49220,9020,280,0,0,70
+O1,Temporary workers and trainees: extraordinary ability or achievement,108180,1640,11980,600,43050,38590,4100,8070,40,170
+O2,Temporary workers and trainees: accompanying and assisting in performance of O-1 workers,57120,600,3870,240,16480,29860,1530,4460,10,30
+O3,Temporary workers and trainees: spouses and children of O-1 and O-2 workers,17500,410,2750,110,5540,5800,360,2510,0,30
+P1,Temporary workers and trainees: internationally recognized athletes or entertainers,113820,850,5700,1030,16190,80650,1680,7600,10,130
+P2,Temporary workers and trainees: artists or entertainers in reciprocal exchange programs,13730,10,30,0,40,13600,20,10,0,0
+P3,Temporary workers and trainees: artists or entertainers in culturally unique programs,15660,670,4290,60,2480,7160,30,880,0,110
+P4,"Temporary workers and trainees: spouses and children of P-1, P-2, and P-3 workers",5490,50,240,50,970,2750,100,1300,0,20
+Q1,Temporary workers and trainees: workers in international cultural exchange programs,3320,30,280,20,2170,810,0,20,0,0
+R1,Temporary workers and trainees: workers in religious occupations,13780,880,3790,300,1550,5830,240,1210,10,10
+R2,Temporary workers and trainees: spouses and children of R-1 workers,5520,200,1630,120,610,2140,90,670,10,0
+TD,Temporary workers and trainees: spouses and children of NAFTA workers,139580,210,1780,110,440,136530,60,430,0,40
+TN,Temporary workers and trainees: NAFTA professional workers,1204910,2010,11840,270,820,1189170,60,550,140,90
+WB,"Temporary visitors: visa waiver, business",1962650,2000,391590,2670,1402480,45160,85560,32590,280,420
+WT,"Temporary visitors: visa waiver, pleasure",15360400,15300,2106940,37580,10797550,617670,1120630,654340,3020,7460
+Other,All other classes,70,0,10,0,30,30,0,0,0,0
+Unknown,Unknown,33520,310,2360,2900,4800,16370,160,6250,170,220

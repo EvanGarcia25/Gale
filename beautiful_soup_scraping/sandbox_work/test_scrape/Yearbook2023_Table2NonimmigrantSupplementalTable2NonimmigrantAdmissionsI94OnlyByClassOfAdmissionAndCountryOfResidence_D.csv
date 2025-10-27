@@ -1,0 +1,66 @@
+Class,Description,Total,Belize,Costa Rica,El Salvador,Guatemala,Honduras,Nicaragua,Panama
+Total,Total of all classes,1438790,36730,292330,257030,318150,293450,67780,173320
+A1,"Foreign government officials and families: ambassadors, public ministers, career diplomats, or consular officers",2150,160,120,570,790,310,50,150
+A2,Foreign government officials and families: other foreign government officials or employees,4530,780,210,1020,840,930,20,730
+A3,"Foreign government officials and families: attendants, servants, or personal employees of A-1 and A-2 classes",50,0,0,20,0,30,0,0
+B1,Temporary visitors: for business,104340,3180,20440,17330,31730,14530,3800,13330
+B2,Temporary visitors: for pleasure,1199900,29360,252650,221080,254870,254780,56390,130770
+C1,Transit individuals: foreign nationals in transit,10830,490,660,1090,630,3390,2150,2420
+C2,Transit individuals: foreign nationals in transit to the United Nations,0,0,0,0,0,0,0,0
+C3,Transit individuals: foreign government officials and families in transit,1470,840,80,190,240,60,20,40
+CW1,Transitional workers: Northern Mariana Islands,0,0,0,0,0,0,0,0
+CW2,Transitional workers: spouses and children of transitional workers in the Northern Mariana Islands,0,0,0,0,0,0,0,0
+E1,Treaty traders and investors: treaty traders [38],180,0,20,0,10,140,0,10
+E1S,Spouses of treaty traders [39],0,0,0,0,0,0,0,0
+E1Y,Children of treaty traders [40],0,0,0,0,0,0,0,0
+E2,Treaty traders and investors: treaty investors [41],1290,0,220,20,70,530,20,430
+E2C,"Treaty traders and investors: treaty investors, Northern Mariana Islands",0,0,0,0,0,0,0,0
+E2S,Spouses of treaty investors [42],30,0,0,0,0,20,0,10
+E2Y,Children of treaty investors [43],20,0,0,0,0,20,0,0
+E3,Treaty traders and investors: Australian Free Trade Agreement [44],0,0,0,0,0,0,0,0
+E3S,Spouses of Australian Free Trade Agreement principals [45],20,0,10,10,0,0,0,0
+E3Y,Children of Australian Free Trade Agreement principals [46],0,0,0,0,0,0,0,0
+F1,Students and exchange visitors: academic students,20650,760,3150,2140,3180,4700,1030,5690
+F2,Students and exchange visitors: spouses and children of academic students,490,10,100,30,120,130,10,90
+F3,Students and exchange visitors: Canadian or Mexican national academic commuter students,0,0,0,0,0,0,0,0
+G1,Representatives to international organizations and families: principals of recognized foreign governments,350,70,40,80,60,30,10,60
+G2,Representatives to international organizations and families: other representatives of recognized foreign governments,130,10,10,30,60,20,0,0
+G3,Representatives to international organizations and families: representatives of nonrecognized or nonmember foreign governments,0,0,0,0,0,0,0,0
+G4,Representatives to international organizations and families: international organization officers or employees,2770,80,750,400,340,440,300,460
+G5,"Attendants, servants or personal employees of representatives",30,0,10,10,10,0,0,0
+GMB,"Temporary visitors: for business, visa waiver, Guam or Northern Mariana Islands",0,0,0,0,0,0,0,0
+GMT,"Temporary visitors: for pleasure, visa waiver, Guam or Northern Mariana Islands",0,0,0,0,0,0,0,0
+H1B,Temporary workers and trainees: specialty occupations,2490,60,710,440,380,470,130,300
+H1B1,Temporary workers and trainees: Chile and Singapore Free Trade Agreement,0,0,0,0,0,0,0,0
+H2A,Temporary workers and trainees: seasonal agricultural workers,6290,30,510,440,3450,660,1180,20
+"H2B, H2R","Temporary workers and trainees: seasonal nonagricultural workers, returning H-2B workers",22390,40,320,6640,8740,6480,40,130
+H3,Temporary workers and trainees: trainees,20,0,20,0,0,0,0,0
+H4,"Temporary workers and trainees: spouses and children of H-1, H-2, and H-3 workers",580,0,190,80,100,110,30,70
+I1,Representatives of foreign information media and families,510,0,30,80,60,250,30,60
+J1,Students and exchange visitors: exchange visitors,3740,120,1290,470,450,780,200,430
+J2,Students and exchange visitors: spouses and children of exchange visitors,450,30,130,40,50,150,20,30
+K1,Fiance(e)s of U.S. citizens,520,10,50,140,130,100,60,30
+K2,Children of fiance(e)s of U.S. citizens,120,0,10,30,30,30,20,0
+L1,Intracompany transferees: principals,4320,10,1920,300,800,450,290,550
+L2,Intracompany transferees: spouses and children of intracompany transferees [47],0,0,0,0,0,0,0,0
+L2S,Spouses of L1 [48],1280,0,620,90,150,170,20,230
+L2Y,Children of L1 [49],710,0,350,50,100,80,10,120
+M1,Students and exchange visitors: vocational students,180,20,30,20,50,20,0,40
+M2,Students and exchange visitors: spouses and children of vocational students,0,0,0,0,0,0,0,0
+N1 to N7,NATO officials and families,0,0,0,0,0,0,0,0
+O1,Temporary workers and trainees: extraordinary ability or achievement,600,10,150,50,140,40,10,200
+O2,Temporary workers and trainees: accompanying and assisting in performance of O-1 workers,240,0,50,0,50,10,0,130
+O3,Temporary workers and trainees: spouses and children of O-1 and O-2 workers,110,0,40,20,20,10,0,20
+P1,Temporary workers and trainees: internationally recognized athletes or entertainers,1030,0,50,250,220,170,50,290
+P2,Temporary workers and trainees: artists or entertainers in reciprocal exchange programs,0,0,0,0,0,0,0,0
+P3,Temporary workers and trainees: artists or entertainers in culturally unique programs,60,40,20,0,0,0,0,0
+P4,"Temporary workers and trainees: spouses and children of P-1, P-2, and P-3 workers",50,0,10,0,10,0,10,20
+Q1,Temporary workers and trainees: workers in international cultural exchange programs,20,0,0,10,0,10,0,0
+R1,Temporary workers and trainees: workers in religious occupations,300,10,50,70,60,50,40,20
+R2,Temporary workers and trainees: spouses and children of R-1 workers,120,0,30,30,10,30,10,10
+TD,Temporary workers and trainees: spouses and children of NAFTA workers,110,0,30,10,10,50,0,10
+TN,Temporary workers and trainees: NAFTA professional workers,270,30,0,10,210,10,0,10
+WB,"Temporary visitors: visa waiver, business",2670,30,540,180,480,80,40,1320
+WT,"Temporary visitors: visa waiver, pleasure",37580,520,6700,3150,8360,2190,1690,14970
+Other,All other classes,0,0,0,0,0,0,0,0
+Unknown,Unknown,2900,40,40,470,1120,1000,110,120
