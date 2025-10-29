@@ -1,0 +1,67 @@
+Class,Description,Total,Belize,Costa Rica,El Salvador,Guatemala,Honduras,Nicaragua,Panama
+Total,Total for all classes,1261746,28924,265238,232136,284021,235179,56671,159577
+A1,"Foreign government officials and families: ambassadors, public ministers, career diplomats, or consular officers",1855,144,121,377,814,270,39,90
+A2,Foreign government officials and families: other foreign government officials or employees,3898,500,155,1176,827,588,10,642
+A3,"Foreign government officials and families: attendants, servants, or personal employees of A-1 and A-2 classes",29,0,0,17,D,9,D,3
+B1,Temporary visitors: for business,88104,2296,16088,14722,27912,11890,3810,11386
+B2,Temporary visitors: for pleasure,1062283,23727,232981,202539,230171,204231,46901,121733
+C1,Transit individuals: foreign nationals in transit,9473,432,734,817,466,3445,1341,2238
+C2,Transit individuals: foreign nationals in transit to the United Nations,0,0,0,0,0,D,D,0
+C3,Transit individuals: foreign government officials and families in transit,941,427,77,97,221,40,16,63
+CW1,Transitional workers: Northern Mariana Islands,0,0,0,0,0,0,0,0
+CW2,Transitional workers: spouses and children of transitional workers in the Northern Mariana Islands,0,0,0,0,0,0,0,0
+E1,Treaty traders and investors: treaty traders [41],154,0,16,0,0,134,0,4
+E1S,Spouses of treaty traders [42],0,0,0,0,0,0,0,0
+E1Y,Children of treaty traders [43],0,0,0,0,0,0,0,0
+E2,Treaty traders and investors: treaty investors [44],1020,D,187,11,111,369,9,333
+E2C,"Treaty traders and investors: treaty investors, Northern Mariana Islands",0,0,0,0,0,0,0,0
+E2S,Spouses of treaty investors [45],5,0,D,0,0,5,0,D
+E2Y,Children of treaty investors [46],4,0,D,0,0,4,0,0
+E3,Treaty traders and investors: Australian Free Trade Agreement [47],0,0,D,D,0,0,0,D
+E3S,Spouses of Australian Free Trade Agreement principals [48],0,0,D,0,0,0,0,0
+E3Y,Children of Australian Free Trade Agreement principals [49],0,0,0,0,0,0,0,0
+F1,Students and exchange visitors: academic students,18733,549,2712,2010,2910,3982,948,5622
+F2,Students and exchange visitors: spouses and children of academic students,451,3,88,34,131,99,15,81
+F3,Students and exchange visitors: Canadian or Mexican national academic commuter students,0,0,0,0,0,0,0,0
+G1,Representatives to international organizations and families: principals of recognized foreign governments,303,37,43,77,73,28,9,36
+G2,Representatives to international organizations and families: other representatives of recognized foreign governments,79,14,3,11,51,D,D,0
+G3,Representatives to international organizations and families: representatives of nonrecognized or nonmember foreign governments,0,D,0,0,0,D,0,D
+G4,Representatives to international organizations and families: international organization officers or employees,1805,67,523,288,252,256,177,242
+G5,"Attendants, servants or personal employees of representatives",24,0,D,6,9,5,4,D
+GMB,"Temporary visitors: for business, visa waiver, Guam or Northern Mariana Islands",0,0,0,0,0,0,0,0
+GMT,"Temporary visitors: for pleasure, visa waiver, Guam or Northern Mariana Islands",0,0,0,0,0,0,0,0
+H1B,Temporary workers and trainees: specialty occupations,1680,25,452,326,272,340,78,187
+H1B1,Temporary workers and trainees: Chile and Singapore Free Trade Agreement,0,0,0,0,0,0,0,D
+H2A,Temporary workers and trainees: seasonal agricultural workers,5180,18,454,380,2803,516,990,19
+H2B,Temporary workers and trainees: seasonal nonagricultural workers,13684,53,298,3634,5603,3946,41,109
+H2R,Temporary workers and trainees: returning H-2B workers [50],0,0,0,0,0,0,0,0
+H3,Temporary workers and trainees: trainees,137,6,126,D,D,0,5,D
+H4,"Temporary workers and trainees: spouses and children of H-1, H-2, and H-3 workers",365,0,85,80,66,67,26,41
+I1,Representatives of foreign information media and families,413,3,19,121,40,158,28,44
+J1,Students and exchange visitors: exchange visitors,2595,43,555,457,389,610,172,369
+J2,Students and exchange visitors: spouses and children of exchange visitors,407,14,130,42,46,134,22,19
+K1,Fiance(e)s of U.S. citizens,525,5,51,121,118,132,61,37
+K2,Children of fiance(e)s of U.S. citizens,126,0,24,31,18,38,8,7
+L1,Intracompany transferees: principals,2924,3,1315,231,527,339,163,346
+L2,Intracompany transferees: spouses and children of intracompany transferees [51],236,3,70,15,55,64,6,23
+L2S,Spouses of L1 [52],938,0,471,77,131,111,17,131
+L2Y,Children of L1 [53],409,0,198,32,60,45,10,64
+M1,Students and exchange visitors: vocational students,146,14,28,15,25,15,D,49
+M2,Students and exchange visitors: spouses and children of vocational students,0,0,0,0,0,0,0,0
+N1 to N7,NATO officials and families,3,3,0,D,0,D,0,0
+O1,Temporary workers and trainees: extraordinary ability or achievement,430,6,135,31,82,22,5,149
+O2,Temporary workers and trainees: accompanying and assisting in performance of O-1 workers,194,0,52,D,11,6,D,125
+O3,Temporary workers and trainees: spouses and children of O-1 and O-2 workers,126,D,63,9,13,20,0,21
+P1,Temporary workers and trainees: internationally recognized athletes or entertainers,848,0,36,191,106,152,65,298
+P2,Temporary workers and trainees: artists or entertainers in reciprocal exchange programs,0,0,0,0,0,0,0,0
+P3,Temporary workers and trainees: artists or entertainers in culturally unique programs,0,0,D,0,0,0,D,0
+P4,"Temporary workers and trainees: spouses and children of P-1, P-2, and P-3 workers",55,0,3,D,6,14,3,29
+Q1,Temporary workers and trainees: workers in international cultural exchange programs,12,0,0,5,7,D,0,0
+R1,Temporary workers and trainees: workers in religious occupations,189,3,23,49,35,43,20,16
+R2,Temporary workers and trainees: spouses and children of R-1 workers,86,D,17,24,12,16,8,9
+TD,Temporary workers and trainees: spouses and children of NAFTA workers,100,0,12,5,10,69,4,D
+TN,Temporary workers and trainees: NAFTA professional workers,75,17,4,3,37,6,D,8
+WB,"Temporary visitors: visa waiver, business",2053,21,398,131,415,67,42,979
+WT,"Temporary visitors: visa waiver, pleasure",36680,470,6411,3501,8707,2189,1512,13890
+Other,All other classes,0,0,D,0,0,0,0,0
+Unknown,Unknown,1918,15,72,436,474,697,97,127

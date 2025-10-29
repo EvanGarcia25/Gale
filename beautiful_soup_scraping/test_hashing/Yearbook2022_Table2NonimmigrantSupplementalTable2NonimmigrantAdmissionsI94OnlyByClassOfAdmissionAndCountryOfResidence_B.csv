@@ -1,0 +1,67 @@
+Class,Description,Total,Algeria,Angola,Benin,Botswana,Burkina Faso,Cabo Verde,Cameroon,Central African Republic,"Congo, Democratic Republic",Cote d'Ivoire,Egypt,Equatorial Guinea,Eswatini,Ethiopia,Gabon,Gambia,Ghana,Guinea,Kenya,Liberia,Libya,Madagascar,Malawi,Mali,Mauritius,Morocco,Mozambique,Namibia,Niger,Nigeria,Reunion,Rwanda,Senegal,Sierra Leone,South Africa,Sudan,Tanzania,Togo,Tunisia,Uganda,Zambia,Zimbabwe
+Total,Total for all classes,392832,5521,3666,1201,1765,2273,2562,5321,1465,5102,4212,52207,1013,1541,12753,1632,1623,25934,1512,21185,1142,1104,1418,1720,2219,4008,22947,1577,1648,1004,65288,1257,4374,7580,2965,85535,1453,5367,1285,9046,6578,3469,7360
+A1,"Foreign government officials and families: ambassadors, public ministers, career diplomats, or consular officers",2058,73,97,19,39,21,17,20,4,12,71,269,18,26,64,51,26,72,19,75,26,63,20,22,41,13,92,37,19,26,227,0,36,91,26,98,29,37,19,58,39,18,28
+A2,Foreign government officials and families: other foreign government officials or employees,9764,201,147,46,184,77,44,195,15,459,129,1814,85,21,95,133,56,695,34,847,128,42,23,36,77,30,507,112,44,123,1012,D,316,129,138,369,18,313,54,552,307,118,39
+A3,"Foreign government officials and families: attendants, servants, or personal employees of A-1 and A-2 classes",67,0,0,D,0,0,0,0,0,0,D,20,0,D,D,11,0,0,0,4,0,0,0,0,0,0,10,0,0,0,D,0,8,0,0,6,4,D,0,D,D,0,4
+B1,Temporary visitors: for business,33269,368,433,61,211,128,40,358,79,342,228,3322,115,91,568,88,55,1600,61,1987,70,114,121,188,109,179,823,211,181,43,4226,3,367,380,123,13060,79,432,70,596,827,383,549
+B2,Temporary visitors: for pleasure,227902,3800,1663,616,858,1427,1839,3277,782,2643,1879,35237,525,455,9066,715,682,16088,1013,11599,447,364,505,723,1563,1656,17655,646,830,362,42102,41,1856,5396,1963,40283,755,2877,714,5431,2998,1864,2707
+C1,Transit individuals: foreign nationals in transit,9951,19,68,10,22,7,33,28,9,7,27,244,3,6,207,0,226,114,D,541,4,0,203,25,4,1247,111,43,63,0,123,0,13,4,8,4643,3,63,6,180,40,104,1493
+C2,Transit individuals: foreign nationals in transit to the United Nations,0,0,0,0,0,0,0,D,0,0,0,0,0,0,0,0,D,0,0,0,0,0,D,D,0,0,0,0,0,0,D,0,0,0,0,D,0,0,0,0,0,0,0
+C3,Transit individuals: foreign government officials and families in transit,338,D,0,4,0,8,0,0,D,0,D,8,0,0,0,0,D,57,0,65,0,D,D,8,0,D,D,0,7,7,80,0,D,18,0,53,0,D,4,0,D,19,0
+CW1,Transitional workers: Northern Mariana Islands,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CW2,Transitional workers: spouses and children of transitional workers in the Northern Mariana Islands,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E1,Treaty traders and investors: treaty traders [15],4,0,0,0,0,0,0,0,0,D,0,0,0,0,D,4,0,0,0,0,0,0,0,0,0,0,D,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,D
+E1S,Spouses of treaty traders [16],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E1Y,Children of treaty traders [17],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E2,Treaty traders and investors: treaty investors [18],286,D,0,0,0,D,0,D,106,D,D,45,0,D,6,D,0,D,D,4,D,0,0,D,0,D,48,0,D,0,0,D,0,D,0,61,0,0,D,16,0,D,D
+E2C,"Treaty traders and investors: treaty investors, Northern Mariana Islands",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E2S,Spouses of treaty investors [19],9,0,0,0,0,0,0,0,0,0,0,D,0,0,D,0,0,0,0,0,0,0,0,0,0,D,3,0,0,0,D,D,0,0,0,6,0,0,0,D,0,0,0
+E2Y,Children of treaty investors [20],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E3,Treaty traders and investors: Australian Free Trade Agreement [21],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,D,0,D,0,0,0,0,0
+E3S,Spouses of Australian Free Trade Agreement principals [22],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E3Y,Children of Australian Free Trade Agreement principals [23],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+F1,Students and exchange visitors: academic students,38072,323,518,181,199,234,47,458,26,871,770,3788,180,168,1511,137,195,3822,62,2709,126,174,93,201,150,272,1372,140,85,165,9380,12,1195,457,196,3454,166,706,117,1028,993,375,1016
+F2,Students and exchange visitors: spouses and children of academic students,3127,22,57,D,15,6,0,15,D,24,14,548,0,D,63,0,9,284,D,82,7,76,23,50,0,0,22,3,6,8,1391,3,10,5,8,95,29,35,D,24,76,20,97
+F3,Students and exchange visitors: Canadian or Mexican national academic commuter students,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G1,Representatives to international organizations and families: principals of recognized foreign governments,1440,64,53,20,23,28,15,32,17,14,36,114,23,16,18,37,23,79,14,73,11,38,4,24,10,13,78,19,31,20,111,0,20,67,35,65,32,30,8,31,34,29,31
+G2,Representatives to international organizations and families: other representatives of recognized foreign governments,3887,11,101,8,16,91,21,73,34,333,114,53,19,19,33,74,142,222,74,295,85,50,58,130,32,16,148,66,42,99,527,0,7,71,126,122,51,144,22,8,139,80,131
+G3,Representatives to international organizations and families: representatives of nonrecognized or nonmember foreign governments,0,0,0,0,D,0,0,0,0,0,0,0,0,0,0,0,0,0,0,D,0,0,0,0,0,0,0,0,D,0,0,0,0,0,0,0,D,0,0,0,0,0,0
+G4,Representatives to international organizations and families: international organization officers or employees,6949,83,41,110,44,97,12,246,33,80,214,600,8,12,243,30,62,399,78,822,26,26,88,130,72,65,207,54,16,54,711,0,156,323,80,503,62,112,65,159,425,146,255
+G5,"Attendants, servants or personal employees of representatives",16,D,0,0,0,0,D,0,0,0,D,D,0,0,D,0,D,D,0,4,0,0,0,0,0,3,0,0,0,0,D,0,D,6,0,0,0,D,D,0,3,0,D
+GMB,"Temporary visitors: for business, visa waiver, Guam or Northern Mariana Islands",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GMT,"Temporary visitors: for pleasure, visa waiver, Guam or Northern Mariana Islands",11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,8,0,0,0,0,0,0,0,0,0,0,D,0,0,0,0,0,0,0,0,0,0,0,0
+H1B,Temporary workers and trainees: specialty occupations,4331,29,13,13,23,15,4,71,D,27,210,734,D,11,87,3,4,341,D,413,D,19,6,9,8,47,128,6,98,6,948,3,150,32,D,384,27,64,60,113,82,19,124
+H1B1,Temporary workers and trainees: Chile and Singapore Free Trade Agreement,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+H2A,Temporary workers and trainees: seasonal agricultural workers,9180,0,D,0,D,0,0,0,D,0,0,41,0,0,0,D,0,0,0,0,0,0,D,0,0,0,0,D,D,0,0,0,0,0,0,9139,0,0,0,0,D,D,D
+H2B,Temporary workers and trainees: seasonal nonagricultural workers,1225,0,0,0,0,0,0,0,0,0,D,0,D,D,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,D,1221,0,0,0,0,0,0,0
+H2R,Temporary workers and trainees: returning H-2B workers [24],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+H3,Temporary workers and trainees: trainees,20,0,0,0,5,0,0,D,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,D,0,0,D,0,8,0,0,0,0,0,0,4
+H4,"Temporary workers and trainees: spouses and children of H-1, H-2, and H-3 workers",1535,3,D,4,9,4,0,23,D,3,7,364,0,6,39,D,D,131,D,73,D,10,4,6,0,4,10,7,D,D,325,0,13,5,D,373,22,11,0,25,30,7,17
+I1,Representatives of foreign information media and families,396,0,15,0,D,9,0,D,0,4,9,35,3,5,4,0,D,62,5,25,0,0,0,0,7,3,37,12,D,0,62,0,4,23,D,48,0,3,0,3,11,3,4
+J1,Students and exchange visitors: exchange visitors,10919,167,41,34,58,34,12,145,7,52,87,2166,11,43,209,12,25,510,13,431,69,82,81,79,56,138,388,80,77,25,1162,6,118,103,52,2890,92,291,38,308,242,102,383
+J2,Students and exchange visitors: spouses and children of exchange visitors,1761,23,D,7,5,4,D,58,16,6,8,722,0,D,62,D,11,129,3,58,D,15,4,18,0,D,25,8,5,0,279,0,11,13,4,120,24,10,0,30,24,3,56
+K1,Fiance(e)s of U.S. citizens,2085,27,4,9,D,6,55,69,0,42,39,214,0,D,156,D,23,247,32,88,64,10,D,4,14,D,124,3,D,9,450,0,18,34,120,83,10,18,29,19,35,12,18
+K2,Children of fiance(e)s of U.S. citizens,195,0,0,D,0,0,9,18,0,D,4,6,0,D,7,D,3,14,D,24,15,0,0,D,0,0,D,0,0,0,31,0,4,9,26,8,D,D,3,0,11,3,D
+L1,Intracompany transferees: principals,3123,28,54,3,4,8,D,16,16,3,7,520,D,7,18,4,D,119,5,93,3,0,0,D,3,24,47,5,14,D,282,0,8,8,4,1557,11,11,0,87,20,8,126
+L2,Intracompany transferees: spouses and children of intracompany transferees [25],289,6,6,0,0,0,0,D,0,0,D,83,0,D,D,0,0,10,0,4,0,0,0,0,0,D,D,D,0,0,25,0,0,0,3,144,4,0,0,4,D,0,D
+L2S,Spouses of L1 [26],1343,12,15,0,D,D,0,3,0,3,3,264,0,3,15,D,D,54,0,24,0,0,0,D,3,14,30,D,D,0,128,0,D,D,4,695,D,3,0,38,7,D,25
+L2Y,Children of L1 [27],857,9,17,0,0,0,D,0,4,4,0,217,0,0,D,0,D,21,0,15,0,0,0,D,0,3,D,4,D,0,60,0,0,0,D,449,3,7,0,21,8,D,15
+M1,Students and exchange visitors: vocational students,290,D,6,0,D,D,D,0,D,5,D,50,D,4,6,0,0,10,D,11,D,0,5,D,0,0,4,0,4,0,71,D,5,D,0,57,6,18,D,13,3,5,7
+M2,Students and exchange visitors: spouses and children of vocational students,6,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,D,0,3,0,0,0,0,0,0,0,0,0,0,D,0,0,0,0,D,0,0,0,0,0,0,0
+N1 to N7,NATO officials and families,7,0,0,0,0,D,D,0,0,0,0,0,0,0,0,0,0,D,0,D,0,D,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0
+O1,Temporary workers and trainees: extraordinary ability or achievement,1094,3,6,8,D,9,6,5,0,D,3,129,0,0,8,0,0,51,3,40,8,D,0,D,5,4,22,3,3,7,271,D,D,16,0,409,3,13,D,27,12,9,11
+O2,Temporary workers and trainees: accompanying and assisting in performance of O-1 workers,362,3,0,0,0,0,0,D,3,19,D,12,0,0,D,0,0,23,0,3,D,0,0,0,6,D,D,D,D,12,96,D,0,58,0,78,0,19,0,0,D,30,0
+O3,Temporary workers and trainees: spouses and children of O-1 and O-2 workers,249,4,0,0,0,D,0,0,0,D,0,57,0,0,0,0,D,3,0,8,D,D,0,0,0,0,D,0,0,0,38,0,0,0,0,136,D,0,0,3,0,0,D
+P1,Temporary workers and trainees: internationally recognized athletes or entertainers,560,7,D,3,6,3,D,13,3,5,11,25,0,3,75,0,D,33,20,81,0,0,0,0,0,D,5,D,4,5,33,0,0,17,D,167,0,0,4,D,21,5,11
+P2,Temporary workers and trainees: artists or entertainers in reciprocal exchange programs,0,0,0,0,0,0,0,0,0,0,D,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+P3,Temporary workers and trainees: artists or entertainers in culturally unique programs,442,0,0,0,0,D,37,6,5,0,D,6,0,0,6,0,D,160,8,8,24,0,D,0,5,3,12,0,0,0,89,0,D,D,0,37,0,D,D,0,29,0,7
+P4,"Temporary workers and trainees: spouses and children of P-1, P-2, and P-3 workers",54,D,0,0,0,D,0,0,0,0,0,0,0,0,9,0,0,3,D,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,29,0,0,0,0,0,0,8
+Q1,Temporary workers and trainees: workers in international cultural exchange programs,41,0,0,0,0,0,0,D,0,0,0,0,0,0,0,0,0,41,0,D,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,D
+R1,Temporary workers and trainees: workers in religious occupations,624,0,0,D,0,D,4,27,0,11,4,26,0,D,10,0,0,138,0,50,0,0,3,4,0,4,0,D,0,0,203,0,5,D,0,51,0,28,5,0,37,5,9
+R2,Temporary workers and trainees: spouses and children of R-1 workers,205,0,0,0,0,0,0,D,0,3,D,42,0,0,7,0,0,21,0,15,D,0,0,D,0,D,0,0,0,0,46,0,3,0,0,49,0,6,0,0,5,0,8
+TD,Temporary workers and trainees: spouses and children of NAFTA workers,83,3,0,0,0,0,0,0,7,0,0,21,0,0,0,0,0,D,0,D,0,0,0,0,0,0,23,0,D,0,11,0,0,0,0,10,4,0,0,0,4,0,D
+TN,Temporary workers and trainees: NAFTA professional workers,500,D,D,3,D,6,3,57,168,0,0,53,0,0,4,0,0,D,0,D,0,0,0,0,0,0,4,0,3,0,190,D,0,D,0,D,0,D,0,3,6,0,D
+WB,"Temporary visitors: visa waiver, business",1262,15,51,D,3,6,6,4,3,14,23,25,3,25,10,31,D,27,4,60,0,3,12,D,D,30,82,12,9,D,47,16,6,17,0,662,D,7,5,22,11,7,4
+WT,"Temporary visitors: visa waiver, pleasure",11933,201,244,34,29,34,344,86,119,96,284,292,13,605,121,292,59,314,46,517,15,12,157,50,51,220,915,96,86,26,506,1162,32,285,35,3854,7,85,51,237,84,89,148
+Other,All other classes,0,0,0,0,0,0,0,0,0,0,0,D,0,0,0,0,0,D,0,0,0,0,0,0,0,0,0,0,0,D,0,0,0,0,D,0,0,0,0,0,D,0,0
+Unknown,Unknown,321,8,5,2,1,1,5,5,0,12,14,35,1,1,18,0,4,24,7,19,5,0,2,0,1,5,6,0,7,1,28,1,6,3,3,46,4,14,3,5,6,1,12

@@ -1,0 +1,35 @@
+Class of admission,Total,Adjustments of status,New arrivals
+Total,321148,210074,111074
+"Spouses, new arrivals (IR1)",39973,-,39973
+"Spouses, adjustments (IR6)",41152,41152,-
+"Spouses, new arrivals, conditional (CR1)",15170,-,15170
+"Spouses, adjustments, conditional (CR6)",76472,76472,-
+"Spouses, new arrivals, self petitioning (IB1)",22,-,22
+"Spouses, adjustments, self petitioning (IB6)",2776,2776,-
+"Spouses, widows or widowers, new arrivals (IW1)",216,-,216
+"Spouses, widows or widowers, adjustments (IW6)",405,405,-
+"Spouses, entered as fiance(e), adjustments, conditional (CF1)",18428,18428,-
+"Spouses, entered as fiance(e), adjustments (IF1)",1104,1104,-
+"Children, new arrivals (IR2)",19439,-,19439
+"Children, adjustments (IR7)",6937,6937,-
+"Children, new arrivals, conditional (CR2)",1765,-,1765
+"Children, adjustments, conditional (CR7)",4292,4292,-
+"Children, new arrivals, self petitioning (IB2)",13,-,13
+"Children, adjustments, self petitioning (IB7)",196,196,-
+"Children of IB1 or IB6, new arrivals (IB3)",70,-,70
+"Children of IB1 or IB6, adjustments (IB8)",190,190,-
+"Children of IW1 or IW6, new arrivals (IW2)",65,-,65
+"Children of IW1 or IW6, adjustments (IW7)",39,39,-
+"Children of CF1, adjustments, conditional (CF2)",2340,2340,-
+"Children of IF1, adjustments (IF2)",385,385,-
+"Children adopted abroad under the Hague Convention, new arrivals (IH3)",821,-,821
+"Children adopted abroad under the Hague Convention, adjustments (IH8)",D,D,-
+"Children to be adopted under the Hague Convention, new arrivals (IH4)",80,-,80
+"Children to be adopted under the Hague Convention, adjustments (IH9)",D,D,-
+"Orphans adopted abroad, new arrivals (IR3)",633,-,633
+"Orphans adopted abroad, adjustments (IR8)",5,5,-
+"Orphans to be adopted, new arrivals (IR4)",96,-,96
+"Orphans to be adopted, adjustments (IR9)",7,7,-
+"Parents of adult U.S. citizens, new arrivals (IR5)",32711,-,32711
+"Parents of adult U.S. citizens, adjustments (IR0)",55257,55257,-
+"Parents battered or abused, of U.S. citizens, adjustments, self petitioning (IB0)",83,83,-
