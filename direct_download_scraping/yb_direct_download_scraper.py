@@ -67,7 +67,8 @@ OUTPUT_FOLDER = "yearbook_downloads"  # Where to save files
 
 # Scraping Parameters
 START_YEAR = None  # None = 1996 (earliest)
-END_YEAR = 2024  # Latest year
+END_YEAR = None  # None = current year + 1 (dynamic, checks for new data)
+DYNAMIC_END_YEAR = True  # Enable dynamic year detection for current/next year
 
 # ============================================================================
 
@@ -475,11 +476,20 @@ def main():
     # Setup logging
     logger = setup_logging()
     
+    # Calculate dynamic end year if enabled
+    end_year = END_YEAR
+    current_year = datetime.now().year
+    if DYNAMIC_END_YEAR and END_YEAR is None:
+        end_year = current_year + 1  # Check current year and next year
+    
     logger.info("=" * 70)
     logger.info("Immigration Yearbook File Downloader")
     logger.info("=" * 70)
     logger.info(f"Start Year: {START_YEAR if START_YEAR else 'Earliest (1996)'}")
-    logger.info(f"End Year: {END_YEAR}")
+    logger.info(f"End Year: {end_year}")
+    logger.info(f"Dynamic Year Detection: {'Enabled' if DYNAMIC_END_YEAR else 'Disabled'}")
+    if DYNAMIC_END_YEAR:
+        logger.info(f"  → Checking for new data from {current_year} and {current_year + 1}")
     logger.info(f"Output Folder: {OUTPUT_FOLDER}")
     logger.info(f"File Types: {', '.join(ALLOWED_EXTENSIONS)}")
     logger.info(f"Max Retries: {MAX_RETRIES}")
@@ -490,14 +500,16 @@ def main():
         # Load existing manifest from output folder
         manifest_path = os.path.join(OUTPUT_FOLDER, MANIFEST_FILENAME)
         manifest = load_manifest(manifest_path)
+        manifest_size_before = len(manifest) if manifest else 0
+        
         if manifest:
-            logger.info(f"Loaded manifest with {len(manifest)} previously downloaded file(s)")
+            logger.info(f"Loaded manifest with {manifest_size_before} previously downloaded file(s)")
 
         # Scrape and download
         manifest = scrape_yearbooks(
             root_url=ROOT,
             start_year=START_YEAR,
-            end_year=END_YEAR,
+            end_year=end_year,
             output_folder=OUTPUT_FOLDER,
             manifest=manifest,
             logger=logger
@@ -506,9 +518,24 @@ def main():
         # Save updated manifest in the output folder
         manifest_path = os.path.join(OUTPUT_FOLDER, MANIFEST_FILENAME)
         save_manifest(manifest, manifest_path)
+        
+        # Report new data findings
+        manifest_size_after = len(manifest) if manifest else 0
+        new_files = manifest_size_after - manifest_size_before
+        
         logger.info(f"Manifest saved to {manifest_path}")
-
         logger.info("=" * 70)
+        
+        if DYNAMIC_END_YEAR:
+            logger.info("NEW DATA DETECTION REPORT:")
+            if new_files > 0:
+                logger.info(f"  ✓ Found {new_files} new file(s) for {current_year}/{current_year + 1}")
+                logger.info(f"    Total files in manifest: {manifest_size_before} → {manifest_size_after}")
+            else:
+                logger.info(f"  ✗ No new data found for {current_year}/{current_year + 1}")
+                logger.info(f"    Total files in manifest: {manifest_size_after} (unchanged)")
+            logger.info("=" * 70)
+        
         logger.info("✓ Download completed successfully!")
         logger.info("=" * 70)
 

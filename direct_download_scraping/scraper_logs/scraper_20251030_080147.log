@@ -1,0 +1,22 @@
+2025-10-30 08:01:47 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 08:01:47 - yearbook_downloader - INFO - Immigration Yearbook File Downloader
+2025-10-30 08:01:47 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 08:01:47 - yearbook_downloader - INFO - Start Year: Earliest (1996)
+2025-10-30 08:01:47 - yearbook_downloader - INFO - End Year: 2024
+2025-10-30 08:01:47 - yearbook_downloader - INFO - Output Folder: yearbook_downloads
+2025-10-30 08:01:47 - yearbook_downloader - INFO - File Types: .pdf, .zip, .xls, .xlsx
+2025-10-30 08:01:47 - yearbook_downloader - INFO - Max Retries: 3
+2025-10-30 08:01:47 - yearbook_downloader - INFO - Request Delay: 1s
+2025-10-30 08:01:47 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 08:01:47 - yearbook_downloader - INFO - Fetching yearbook information from https://ohss.dhs.gov/topics/immigration/yearbook
+2025-10-30 08:01:49 - yearbook_downloader - INFO - Found 26 yearbook(s) in range 1996-2024
+2025-10-30 08:01:49 - yearbook_downloader - INFO - Found 26 yearbook(s) to process
+2025-10-30 08:01:49 - yearbook_downloader - INFO - Processing Yearbook 2024
+2025-10-30 08:01:50 - yearbook_downloader - INFO - Yearbook 2024: Found 1 file(s)
+2025-10-30 08:01:51 - yearbook_downloader - INFO -   Downloaded: 2025_0812_ohss_yearbook_refugees_fy2024.xlsx
+2025-10-30 08:01:51 - yearbook_downloader - INFO - Yearbook 2024: Downloaded 1, Skipped 0, Failed 0
+2025-10-30 08:01:52 - yearbook_downloader - INFO - Processing Yearbook 2023
+2025-10-30 08:01:53 - yearbook_downloader - INFO - Yearbook 2023: Found 6 file(s)
+2025-10-30 08:01:54 - yearbook_downloader - INFO -   Downloaded: 2024_0906_ohss_yearbook_lawful_permanent_residents_fy2023_0.xlsx
+2025-10-30 08:01:56 - yearbook_downloader - INFO -   Downloaded: 2024_1108_ohss_yearbook_refugees_fy2023.xlsx
+2025-10-30 08:01:57 - yearbook_downloader - INFO -   Downloaded: 2024_1002_ohss_yearbook_asylees_fy2023.xlsx
