@@ -1,0 +1,21 @@
+2025-10-30 07:34:37 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Immigration Yearbook File Downloader
+2025-10-30 07:34:37 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Start Year: 2022
+2025-10-30 07:34:37 - yearbook_downloader - INFO - End Year: 2024
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Output Folder: yearbook_downloads
+2025-10-30 07:34:37 - yearbook_downloader - INFO - File Types: .zip, .pdf, .xls, .xlsx
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Max Retries: 3
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Request Delay: 1s
+2025-10-30 07:34:37 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Loaded manifest with 14 previously downloaded file(s)
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Fetching yearbook information from https://ohss.dhs.gov/topics/immigration/yearbook
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Found 3 yearbook(s) in range 2022-2024
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Found 3 yearbook(s) to process
+2025-10-30 07:34:37 - yearbook_downloader - INFO - Processing Yearbook 2024
+2025-10-30 07:34:39 - yearbook_downloader - INFO - Yearbook 2024: Found 1 file(s)
+2025-10-30 07:34:39 - yearbook_downloader - INFO - Yearbook 2024: Downloaded 0, Skipped 1, Failed 0
+2025-10-30 07:34:40 - yearbook_downloader - INFO - Processing Yearbook 2023
+2025-10-30 07:34:41 - yearbook_downloader - INFO - Yearbook 2023: Found 6 file(s)
+2025-10-30 07:34:41 - yearbook_downloader - INFO - Yearbook 2023: Downloaded 0, Skipped 6, Failed 0
+2025-10-30 07:34:42 - yearbook_downloader - INFO - Processing Yearbook 2022

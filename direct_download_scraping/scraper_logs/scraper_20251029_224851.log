@@ -1,0 +1,10 @@
+2025-10-29 22:48:51 - yearbook_downloader - INFO - ======================================================================
+2025-10-29 22:48:51 - yearbook_downloader - INFO - Immigration Yearbook File Downloader
+2025-10-29 22:48:51 - yearbook_downloader - INFO - ======================================================================
+2025-10-29 22:48:51 - yearbook_downloader - INFO - Start Year: Earliest (1996)
+2025-10-29 22:48:51 - yearbook_downloader - INFO - End Year: 2024
+2025-10-29 22:48:51 - yearbook_downloader - INFO - Output Folder: yearbook_downloads
+2025-10-29 22:48:51 - yearbook_downloader - INFO - File Types: .xls, .xlsx, .zip, .pdf
+2025-10-29 22:48:51 - yearbook_downloader - INFO - Max Retries: 3
+2025-10-29 22:48:51 - yearbook_downloader - INFO - Request Delay: 1s
+2025-10-29 22:48:51 - yearbook_downloader - INFO - ======================================================================

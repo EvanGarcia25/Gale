@@ -1,0 +1,322 @@
+2025-10-30 07:15:43 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 07:15:43 - yearbook_downloader - INFO - Immigration Yearbook File Downloader
+2025-10-30 07:15:43 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 07:15:43 - yearbook_downloader - INFO - Start Year: Earliest (1996)
+2025-10-30 07:15:43 - yearbook_downloader - INFO - End Year: 2024
+2025-10-30 07:15:43 - yearbook_downloader - INFO - Output Folder: yearbook_downloads
+2025-10-30 07:15:43 - yearbook_downloader - INFO - File Types: .xlsx, .xls, .pdf, .zip
+2025-10-30 07:15:43 - yearbook_downloader - INFO - Max Retries: 3
+2025-10-30 07:15:43 - yearbook_downloader - INFO - Request Delay: 1s
+2025-10-30 07:15:43 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 07:15:43 - yearbook_downloader - INFO - Fetching yearbook information from https://ohss.dhs.gov/topics/immigration/yearbook
+2025-10-30 07:15:44 - yearbook_downloader - INFO - Found 26 yearbook(s) in range 1996-2024
+2025-10-30 07:15:44 - yearbook_downloader - INFO - Found 26 yearbook(s) to process
+2025-10-30 07:15:44 - yearbook_downloader - INFO - Processing Yearbook 2024
+2025-10-30 07:15:46 - yearbook_downloader - INFO - Yearbook 2024: Found 1 file(s)
+2025-10-30 07:15:47 - yearbook_downloader - INFO -   Downloaded: 2025_0812_ohss_yearbook_refugees_fy2024.xlsx
+2025-10-30 07:15:47 - yearbook_downloader - INFO - Yearbook 2024: Downloaded 1, Skipped 0, Failed 0
+2025-10-30 07:15:48 - yearbook_downloader - INFO - Processing Yearbook 2023
+2025-10-30 07:15:49 - yearbook_downloader - INFO - Yearbook 2023: Found 6 file(s)
+2025-10-30 07:15:50 - yearbook_downloader - INFO -   Downloaded: 2024_0906_ohss_yearbook_lawful_permanent_residents_fy2023_0.xlsx
+2025-10-30 07:15:51 - yearbook_downloader - INFO -   Downloaded: 2024_1108_ohss_yearbook_refugees_fy2023.xlsx
+2025-10-30 07:15:53 - yearbook_downloader - INFO -   Downloaded: 2024_1002_ohss_yearbook_asylees_fy2023.xlsx
+2025-10-30 07:15:53 - yearbook_downloader - INFO -   Downloaded: 2025_0725_plcy_yearbook_naturalizations_fy2023.xlsx
+2025-10-30 07:15:54 - yearbook_downloader - INFO -   Downloaded: 2024_0906_ohss_yearbook_nonimmigrants_fy2023_0.xlsx
+2025-10-30 07:15:55 - yearbook_downloader - INFO -   Downloaded: 2025_0828_ohss_tables8-11newadj_fy2023.xlsx
+2025-10-30 07:15:55 - yearbook_downloader - INFO - Yearbook 2023: Downloaded 6, Skipped 0, Failed 0
+2025-10-30 07:15:56 - yearbook_downloader - INFO - Processing Yearbook 2022
+2025-10-30 07:15:58 - yearbook_downloader - INFO - Yearbook 2022: Found 7 file(s)
+2025-10-30 07:15:59 - yearbook_downloader - INFO -   Downloaded: 2023_0818_plcy_yearbook_immigration_statistics_fy2022.pdf
+2025-10-30 07:16:00 - yearbook_downloader - INFO -   Downloaded: 2023_0818_plcy_yearbook_lawful_permanent_residents_fy2022_0.xlsx
+2025-10-30 07:16:02 - yearbook_downloader - INFO -   Downloaded: plcy_tables8-11newadj_fy2022_d.xlsx
+2025-10-30 07:16:03 - yearbook_downloader - INFO -   Downloaded: 2023_0818_plcy_yearbook_refugees_and_asylees_fy2022_0.xlsx
+2025-10-30 07:16:04 - yearbook_downloader - INFO -   Downloaded: 2023_0818_plcy_yearbook_naturalizations_fy2022.xlsx_0_0.xlsx
+2025-10-30 07:16:05 - yearbook_downloader - INFO -   Downloaded: 2023_0818_plcy_yearbook_nonimmigrants_fy2022_0.xlsx
+2025-10-30 07:16:08 - yearbook_downloader - INFO -   Downloaded: 2023_0818_plcy_yearbook_enforcement_fy2022_0.xlsx
+2025-10-30 07:16:08 - yearbook_downloader - INFO - Yearbook 2022: Downloaded 7, Skipped 0, Failed 0
+2025-10-30 07:16:09 - yearbook_downloader - INFO - Processing Yearbook 2021
+2025-10-30 07:16:10 - yearbook_downloader - INFO - Yearbook 2021: Found 10 file(s)
+2025-10-30 07:16:12 - yearbook_downloader - INFO -   Downloaded: 2022_1114_plcy_yearbook_immigration_statistics_fy2021_v2_1_1.pdf
+2025-10-30 07:16:13 - yearbook_downloader - INFO -   Downloaded: 2022_0405_plcy_lawful_permanent_residents_fy2021_excel_1.zip
+2025-10-30 07:16:15 - yearbook_downloader - INFO -   Downloaded: 2022_0405_plcy_lawful_permanent_residents_fy2021_supplemental_tables_0.zip
+2025-10-30 07:16:16 - yearbook_downloader - INFO -   Downloaded: 2202_0405_plcy_tables8-11newadj_fy2021_d.xlsx
+2025-10-30 07:16:17 - yearbook_downloader - INFO -   Downloaded: 2022_0920_plcy_refugees_and_asylees_fy2021_tables_0.zip
+2025-10-30 07:16:18 - yearbook_downloader - INFO -   Downloaded: 2022_0624_plcy_naturalizations_fy2021_tables_1.zip
+2025-10-30 07:16:19 - yearbook_downloader - INFO -   Downloaded: 2022_0624_plcy_naturalizations_fy2021_supplemental_tables_0.zip
+2025-10-30 07:16:20 - yearbook_downloader - INFO -   Downloaded: 2022_0712_plcy_nonimmigrants_fy2021_tables_0.zip
+2025-10-30 07:16:22 - yearbook_downloader - INFO -   Downloaded: 2022_0712_plcy_nonimmigrants_fy2021_supplemental_tables_0.zip
+2025-10-30 07:16:22 - yearbook_downloader - INFO -   Downloaded: 2022_1114_plcy_2021_yrbk_enf_excel_final_0.zip
+2025-10-30 07:16:22 - yearbook_downloader - INFO - Yearbook 2021: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:16:23 - yearbook_downloader - INFO - Processing Yearbook 2020
+2025-10-30 07:16:24 - yearbook_downloader - INFO - Yearbook 2020: Found 10 file(s)
+2025-10-30 07:16:26 - yearbook_downloader - INFO -   Downloaded: 2022_0308_plcy_yearbook_immigration_statistics_fy2020_v2_2.pdf
+2025-10-30 07:16:27 - yearbook_downloader - INFO -   Downloaded: 21_0920_plcy_2020_yrbk_lpr_excel_final.zip
+2025-10-30 07:16:28 - yearbook_downloader - INFO -   Downloaded: 21_0920_plcy_2020_yrbk_lpr_supplement.zip
+2025-10-30 07:16:29 - yearbook_downloader - INFO -   Downloaded: 2021_0920_plcy_tables8-11newadj_fy2020_d.xlsx
+2025-10-30 07:16:30 - yearbook_downloader - INFO -   Downloaded: 22_0308_plcy_2020_yrbk_rfa_excel_final_v2.zip
+2025-10-30 07:16:32 - yearbook_downloader - INFO -   Downloaded: 21_1004_plcy_2020_yrbk_natz_excel_final_0.zip
+2025-10-30 07:16:33 - yearbook_downloader - INFO -   Downloaded: 21_1004_plcy_2020_yrbk_natz_supplement_0.zip
+2025-10-30 07:16:34 - yearbook_downloader - INFO -   Downloaded: 21_1004_plcy_2020_yrbk_ni_excel_final.zip
+2025-10-30 07:16:36 - yearbook_downloader - INFO -   Downloaded: 21_1004_plcy_2020_yrbk_ni_supplement.zip
+2025-10-30 07:16:37 - yearbook_downloader - INFO -   Downloaded: 22_0131_plcy_2020_yrbk_enf_excel_final_0.zip
+2025-10-30 07:16:37 - yearbook_downloader - INFO - Yearbook 2020: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:16:38 - yearbook_downloader - INFO - Processing Yearbook 2019
+2025-10-30 07:16:40 - yearbook_downloader - INFO - Yearbook 2019: Found 10 file(s)
+2025-10-30 07:16:44 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2019_0.pdf
+2025-10-30 07:16:45 - yearbook_downloader - INFO -   Downloaded: yrbk_2019_lpr_excel_final.zip
+2025-10-30 07:16:46 - yearbook_downloader - INFO -   Downloaded: yrbk_2019_lpr_supplement.zip
+2025-10-30 07:16:47 - yearbook_downloader - INFO -   Downloaded: fy2019_tables8-11_newadj_d.xlsx
+2025-10-30 07:16:48 - yearbook_downloader - INFO -   Downloaded: yrbk_2019_rfa_excel_final.zip
+2025-10-30 07:16:50 - yearbook_downloader - INFO -   Downloaded: yrbk_2019_natz_excel_final.zip
+2025-10-30 07:16:51 - yearbook_downloader - INFO -   Downloaded: yrbk_2019_natz_supplement.zip
+2025-10-30 07:16:51 - yearbook_downloader - INFO -   Downloaded: yrbk_2019_ni_excel_final.zip
+2025-10-30 07:16:52 - yearbook_downloader - INFO -   Downloaded: yrbk_2019_ni_supplement.zip
+2025-10-30 07:16:53 - yearbook_downloader - INFO -   Downloaded: yrbk_2019_enf_excel_final.zip
+2025-10-30 07:16:53 - yearbook_downloader - INFO - Yearbook 2019: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:16:54 - yearbook_downloader - INFO - Processing Yearbook 2018
+2025-10-30 07:16:56 - yearbook_downloader - INFO - Yearbook 2018: Found 10 file(s)
+2025-10-30 07:16:57 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2018.pdf
+2025-10-30 07:16:58 - yearbook_downloader - INFO -   Downloaded: yrbk_2018_lpr_excel_final.zip
+2025-10-30 07:17:00 - yearbook_downloader - INFO -   Downloaded: yrbk_2018_lpr_supplement.zip
+2025-10-30 07:17:01 - yearbook_downloader - INFO -   Downloaded: fy2018_tables8-11newadj_d.xlsx
+2025-10-30 07:17:02 - yearbook_downloader - INFO -   Downloaded: yrbk_2018_rfa_excel_final.zip
+2025-10-30 07:17:03 - yearbook_downloader - INFO -   Downloaded: yrbk_2018_natz_excel_final.zip
+2025-10-30 07:17:04 - yearbook_downloader - INFO -   Downloaded: yrbk_2018_natz_supplement.zip
+2025-10-30 07:17:06 - yearbook_downloader - INFO -   Downloaded: yrbk_2018_ni_excel_final.zip
+2025-10-30 07:17:07 - yearbook_downloader - INFO -   Downloaded: yrbk_2018_ni_supplement.zip
+2025-10-30 07:17:09 - yearbook_downloader - INFO -   Downloaded: yrbk_2018_enf_excel_final.zip
+2025-10-30 07:17:09 - yearbook_downloader - INFO - Yearbook 2018: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:17:10 - yearbook_downloader - INFO - Processing Yearbook 2017
+2025-10-30 07:17:11 - yearbook_downloader - INFO - Yearbook 2017: Found 10 file(s)
+2025-10-30 07:17:15 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2017_0.pdf
+2025-10-30 07:17:16 - yearbook_downloader - INFO -   Downloaded: yrbk%25202017%2520lpr%2520excel%2520final.zip
+2025-10-30 07:17:18 - yearbook_downloader - INFO -   Downloaded: yrbk%25202017%2520lpr%2520supplement.zip
+2025-10-30 07:17:19 - yearbook_downloader - INFO -   Downloaded: fy2017_tables8-11newadj_d.xlsx
+2025-10-30 07:17:20 - yearbook_downloader - INFO -   Downloaded: yrbk%25202017%2520rfa%2520excel%2520final_0.zip
+2025-10-30 07:17:20 - yearbook_downloader - INFO -   Downloaded: yrbk%25202017%2520natz%2520excel%2520final.zip
+2025-10-30 07:17:21 - yearbook_downloader - INFO -   Downloaded: yrbk%25202017%2520natz%2520supplement.zip
+2025-10-30 07:17:22 - yearbook_downloader - INFO -   Downloaded: yrbk%25202017%2520ni%2520excel%2520final_0.zip
+2025-10-30 07:17:24 - yearbook_downloader - INFO -   Downloaded: yrbk%25202017%2520ni%2520supplement_0.zip
+2025-10-30 07:17:25 - yearbook_downloader - INFO -   Downloaded: yrbk_2017_enf_excel_final_0.zip
+2025-10-30 07:17:25 - yearbook_downloader - INFO - Yearbook 2017: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:17:26 - yearbook_downloader - INFO - Processing Yearbook 2016
+2025-10-30 07:17:27 - yearbook_downloader - INFO - Yearbook 2016: Found 10 file(s)
+2025-10-30 07:17:30 - yearbook_downloader - INFO -   Downloaded: 2016%2520yearbook%2520of%2520immigration%2520statistics.pdf
+2025-10-30 07:17:31 - yearbook_downloader - INFO -   Downloaded: yrbk%25202016%2520lpr%2520excel%2520final_0.zip
+2025-10-30 07:17:33 - yearbook_downloader - INFO -   Downloaded: yrbk%25202016%2520lpr%2520supplement_0.zip
+2025-10-30 07:17:34 - yearbook_downloader - INFO -   Downloaded: fy2016_tables8-11newadj_d.xlsx
+2025-10-30 07:17:35 - yearbook_downloader - INFO -   Downloaded: yrbk%25202016%2520rfa%2520excel%2520final_1.zip
+2025-10-30 07:17:36 - yearbook_downloader - INFO -   Downloaded: yrbk%25202016%2520natz%2520excel%2520final_0.zip
+2025-10-30 07:17:37 - yearbook_downloader - INFO -   Downloaded: yrbk%25202016%2520natz%2520supplement_0.zip
+2025-10-30 07:17:39 - yearbook_downloader - INFO -   Downloaded: yrbk%25202016%2520ni%2520excel%2520final_0.zip
+2025-10-30 07:17:40 - yearbook_downloader - INFO -   Downloaded: yrbk%25202016%2520ni%2520supplement_0.zip
+2025-10-30 07:17:41 - yearbook_downloader - INFO -   Downloaded: yrbk%25202016%2520enf%2520excel%2520final.zip
+2025-10-30 07:17:41 - yearbook_downloader - INFO - Yearbook 2016: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:17:42 - yearbook_downloader - INFO - Processing Yearbook 2015
+2025-10-30 07:17:43 - yearbook_downloader - INFO - Yearbook 2015: Found 10 file(s)
+2025-10-30 07:17:45 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2015.pdf
+2025-10-30 07:17:46 - yearbook_downloader - INFO -   Downloaded: yrbk%25202015%2520lpr%2520excel%2520final_2.zip
+2025-10-30 07:17:48 - yearbook_downloader - INFO -   Downloaded: yrbk%25202015%2520lpr%2520excel%2520supp%2520final_2.zip
+2025-10-30 07:17:48 - yearbook_downloader - INFO -   Downloaded: fy2015_tables8-11newadj_d_0.xlsx
+2025-10-30 07:17:49 - yearbook_downloader - INFO -   Downloaded: yrbk%25202015%2520rfa%2520excel%2520final.zip
+2025-10-30 07:17:50 - yearbook_downloader - INFO -   Downloaded: yrbk%25202015%2520natz%2520excel%2520final.zip
+2025-10-30 07:17:51 - yearbook_downloader - INFO -   Downloaded: yrbk%25202015%2520natz%2520excel%2520supp%2520final.zip
+2025-10-30 07:17:53 - yearbook_downloader - INFO -   Downloaded: yrbk%25202015%2520ni%2520excel%2520final_0.zip
+2025-10-30 07:17:54 - yearbook_downloader - INFO -   Downloaded: yrbk%25202015%2520ni%2520excel%2520supp%2520final_0.zip
+2025-10-30 07:17:55 - yearbook_downloader - INFO -   Downloaded: yrbk%25202015%2520enf%2520excel%2520final_3.zip
+2025-10-30 07:17:55 - yearbook_downloader - INFO - Yearbook 2015: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:17:56 - yearbook_downloader - INFO - Processing Yearbook 2014
+2025-10-30 07:17:57 - yearbook_downloader - INFO - Yearbook 2014: Found 10 file(s)
+2025-10-30 07:17:59 - yearbook_downloader - INFO -   Downloaded: dhs%25202014%2520yearbook.pdf
+2025-10-30 07:18:00 - yearbook_downloader - INFO -   Downloaded: yrbk%25202014%2520lpr%2520excel%2520final_0.zip
+2025-10-30 07:18:01 - yearbook_downloader - INFO -   Downloaded: yrbk%25202014%2520lpr%2520excel%2520supp_0.zip
+2025-10-30 07:18:02 - yearbook_downloader - INFO -   Downloaded: fy2014_tables8-11newadj_d_0.xlsx
+2025-10-30 07:18:04 - yearbook_downloader - INFO -   Downloaded: yrbk%25202014%2520rfa%2520excel%2520final_0.zip
+2025-10-30 07:18:05 - yearbook_downloader - INFO -   Downloaded: yrbk%25202014%2520natz%2520excel%2520final_0.zip
+2025-10-30 07:18:06 - yearbook_downloader - INFO -   Downloaded: yrbk%25202014%2520natz%2520excel%2520supp_0.zip
+2025-10-30 07:18:07 - yearbook_downloader - INFO -   Downloaded: yrbk%25202014%2520ni%2520excel%2520final_0.zip
+2025-10-30 07:18:09 - yearbook_downloader - INFO -   Downloaded: yrbk%25202014%2520ni%2520excel%2520supp_0.zip
+2025-10-30 07:18:10 - yearbook_downloader - INFO -   Downloaded: yrbk%25202014%2520enf%2520excel%2520final_0.zip
+2025-10-30 07:18:10 - yearbook_downloader - INFO - Yearbook 2014: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:18:11 - yearbook_downloader - INFO - Processing Yearbook 2013
+2025-10-30 07:18:12 - yearbook_downloader - INFO - Yearbook 2013: Found 10 file(s)
+2025-10-30 07:18:14 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2013_0.pdf
+2025-10-30 07:18:15 - yearbook_downloader - INFO -   Downloaded: fy2013_tables8-11newadj_d.xlsx
+2025-10-30 07:18:16 - yearbook_downloader - INFO -   Downloaded: lpr%25202013_0.zip
+2025-10-30 07:18:17 - yearbook_downloader - INFO -   Downloaded: lpr%25202013%2520supp_0.zip
+2025-10-30 07:18:17 - yearbook_downloader - INFO -   Downloaded: rfa%25202013_0.zip
+2025-10-30 07:18:19 - yearbook_downloader - INFO -   Downloaded: natz%25202013_0.zip
+2025-10-30 07:18:20 - yearbook_downloader - INFO -   Downloaded: natz%25202013%2520supp_0.zip
+2025-10-30 07:18:21 - yearbook_downloader - INFO -   Downloaded: ni%25202013_0.zip
+2025-10-30 07:18:22 - yearbook_downloader - INFO -   Downloaded: ni%25202013%2520supp_0.zip
+2025-10-30 07:18:23 - yearbook_downloader - INFO -   Downloaded: enf%25202013_0.zip
+2025-10-30 07:18:23 - yearbook_downloader - INFO - Yearbook 2013: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:18:24 - yearbook_downloader - INFO - Processing Yearbook 2012
+2025-10-30 07:18:26 - yearbook_downloader - INFO - Yearbook 2012: Found 7 file(s)
+2025-10-30 07:18:27 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2012.pdf
+2025-10-30 07:18:28 - yearbook_downloader - INFO -   Downloaded: fy2012_tables8-11newadj_d.xlsx
+2025-10-30 07:18:29 - yearbook_downloader - INFO -   Downloaded: lpr%25202012%2520supp_0.zip
+2025-10-30 07:18:31 - yearbook_downloader - INFO -   Downloaded: rfa%25202012_0.zip
+2025-10-30 07:18:32 - yearbook_downloader - INFO -   Downloaded: natz%25202012%2520supp_0.zip
+2025-10-30 07:18:33 - yearbook_downloader - INFO -   Downloaded: ni%25202012_0.zip
+2025-10-30 07:18:34 - yearbook_downloader - INFO -   Downloaded: ni%25202012%2520supp_0.zip
+2025-10-30 07:18:34 - yearbook_downloader - INFO - Yearbook 2012: Downloaded 7, Skipped 0, Failed 0
+2025-10-30 07:18:35 - yearbook_downloader - INFO - Processing Yearbook 2011
+2025-10-30 07:18:36 - yearbook_downloader - INFO - Yearbook 2011: Found 10 file(s)
+2025-10-30 07:18:39 - yearbook_downloader - INFO -   Downloaded: ois_yb_2011.pdf
+2025-10-30 07:18:40 - yearbook_downloader - INFO -   Downloaded: fy2011_tables8-11newadj_d.xlsx
+2025-10-30 07:18:41 - yearbook_downloader - INFO -   Downloaded: lpr2011_0.zip
+2025-10-30 07:18:43 - yearbook_downloader - INFO -   Downloaded: lpr2011%2520supp_0.zip
+2025-10-30 07:18:44 - yearbook_downloader - INFO -   Downloaded: rfa2011_0.zip
+2025-10-30 07:18:45 - yearbook_downloader - INFO -   Downloaded: natz2011_0.zip
+2025-10-30 07:18:46 - yearbook_downloader - INFO -   Downloaded: natz2011%2520supp_0.zip
+2025-10-30 07:18:46 - yearbook_downloader - INFO -   Downloaded: ni2011_0.zip
+2025-10-30 07:18:48 - yearbook_downloader - INFO -   Downloaded: ni2011%2520supp_0.zip
+2025-10-30 07:18:49 - yearbook_downloader - INFO -   Downloaded: enf2011_0.zip
+2025-10-30 07:18:49 - yearbook_downloader - INFO - Yearbook 2011: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:18:50 - yearbook_downloader - INFO - Processing Yearbook 2010
+2025-10-30 07:18:51 - yearbook_downloader - INFO - Yearbook 2010: Found 10 file(s)
+2025-10-30 07:18:53 - yearbook_downloader - INFO -   Downloaded: ois_yb_2010.pdf
+2025-10-30 07:18:54 - yearbook_downloader - INFO -   Downloaded: fy2010_tables8-11newadj_d.xlsx
+2025-10-30 07:18:55 - yearbook_downloader - INFO -   Downloaded: lpr2010_0.zip
+2025-10-30 07:18:56 - yearbook_downloader - INFO -   Downloaded: lpr2010%2520supp_0.zip
+2025-10-30 07:18:57 - yearbook_downloader - INFO -   Downloaded: rfa2010_0.zip
+2025-10-30 07:18:59 - yearbook_downloader - INFO -   Downloaded: natz2010_0.zip
+2025-10-30 07:19:00 - yearbook_downloader - INFO -   Downloaded: natz2010%2520supp_0.zip
+2025-10-30 07:19:01 - yearbook_downloader - INFO -   Downloaded: ni2010_0.zip
+2025-10-30 07:19:02 - yearbook_downloader - INFO -   Downloaded: ni2010%2520supp_0.zip
+2025-10-30 07:19:04 - yearbook_downloader - INFO -   Downloaded: enf2010_0.zip
+2025-10-30 07:19:04 - yearbook_downloader - INFO - Yearbook 2010: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:19:05 - yearbook_downloader - INFO - Processing Yearbook 2009
+2025-10-30 07:19:06 - yearbook_downloader - INFO - Yearbook 2009: Found 10 file(s)
+2025-10-30 07:19:08 - yearbook_downloader - INFO -   Downloaded: ois_yb_2009.pdf
+2025-10-30 07:19:09 - yearbook_downloader - INFO -   Downloaded: fy2009_tables8-11newadj_d.xlsx
+2025-10-30 07:19:10 - yearbook_downloader - INFO -   Downloaded: lpr2009_0.zip
+2025-10-30 07:19:12 - yearbook_downloader - INFO -   Downloaded: lpr2009%2520supp_0.zip
+2025-10-30 07:19:13 - yearbook_downloader - INFO -   Downloaded: rfa2009_0.zip
+2025-10-30 07:19:14 - yearbook_downloader - INFO -   Downloaded: natz2009_0.zip
+2025-10-30 07:19:15 - yearbook_downloader - INFO -   Downloaded: natz2009%2520supp_0.zip
+2025-10-30 07:19:15 - yearbook_downloader - INFO -   Downloaded: ni2009_0.zip
+2025-10-30 07:19:16 - yearbook_downloader - INFO -   Downloaded: ni2009%2520supp_0.zip
+2025-10-30 07:19:18 - yearbook_downloader - INFO -   Downloaded: enf2009_0.zip
+2025-10-30 07:19:18 - yearbook_downloader - INFO - Yearbook 2009: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:19:19 - yearbook_downloader - INFO - Processing Yearbook 2008
+2025-10-30 07:19:20 - yearbook_downloader - INFO - Yearbook 2008: Found 10 file(s)
+2025-10-30 07:19:22 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2008.pdf
+2025-10-30 07:19:23 - yearbook_downloader - INFO -   Downloaded: fy2008_tables8-11newadj_d.xlsx
+2025-10-30 07:19:24 - yearbook_downloader - INFO -   Downloaded: lpr2008_0.zip
+2025-10-30 07:19:25 - yearbook_downloader - INFO -   Downloaded: lpr2008%2520supp_0.zip
+2025-10-30 07:19:27 - yearbook_downloader - INFO -   Downloaded: rfa2008_0.zip
+2025-10-30 07:19:28 - yearbook_downloader - INFO -   Downloaded: natz2008_0.zip
+2025-10-30 07:19:29 - yearbook_downloader - INFO -   Downloaded: natz2008%2520supp_0.zip
+2025-10-30 07:19:30 - yearbook_downloader - INFO -   Downloaded: ni2008_0.zip
+2025-10-30 07:19:31 - yearbook_downloader - INFO -   Downloaded: ni2008%2520supp_0.zip
+2025-10-30 07:19:33 - yearbook_downloader - INFO -   Downloaded: enf2008_0.zip
+2025-10-30 07:19:33 - yearbook_downloader - INFO - Yearbook 2008: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:19:34 - yearbook_downloader - INFO - Processing Yearbook 2007
+2025-10-30 07:19:35 - yearbook_downloader - INFO - Yearbook 2007: Found 10 file(s)
+2025-10-30 07:19:37 - yearbook_downloader - INFO -   Downloaded: ois_2007_yearbook.pdf
+2025-10-30 07:19:38 - yearbook_downloader - INFO -   Downloaded: fy2007_tables8-11newadj_d.xlsx
+2025-10-30 07:19:40 - yearbook_downloader - INFO -   Downloaded: lpr2007_0.zip
+2025-10-30 07:19:41 - yearbook_downloader - INFO -   Downloaded: lpr2007%2520supp_0.zip
+2025-10-30 07:19:42 - yearbook_downloader - INFO -   Downloaded: rfa2007_0.zip
+2025-10-30 07:19:43 - yearbook_downloader - INFO -   Downloaded: natz2007_0.zip
+2025-10-30 07:19:43 - yearbook_downloader - INFO -   Downloaded: natz2007%2520supp_0.zip
+2025-10-30 07:19:44 - yearbook_downloader - INFO -   Downloaded: ni2007_0.zip
+2025-10-30 07:19:46 - yearbook_downloader - INFO -   Downloaded: ni2007%2520supp_0.zip
+2025-10-30 07:19:47 - yearbook_downloader - INFO -   Downloaded: enf2007_0.zip
+2025-10-30 07:19:47 - yearbook_downloader - INFO - Yearbook 2007: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:19:48 - yearbook_downloader - INFO - Processing Yearbook 2006
+2025-10-30 07:19:49 - yearbook_downloader - INFO - Yearbook 2006: Found 10 file(s)
+2025-10-30 07:19:51 - yearbook_downloader - INFO -   Downloaded: ois_2006_yearbook.pdf
+2025-10-30 07:19:52 - yearbook_downloader - INFO -   Downloaded: fy2006_tables8-11newadj_d.xlsx
+2025-10-30 07:19:53 - yearbook_downloader - INFO -   Downloaded: lpr2006_0.zip
+2025-10-30 07:19:54 - yearbook_downloader - INFO -   Downloaded: lpr2006%2520supp_0.zip
+2025-10-30 07:19:55 - yearbook_downloader - INFO -   Downloaded: rfa2006_0.zip
+2025-10-30 07:19:57 - yearbook_downloader - INFO -   Downloaded: natz2006_0.zip
+2025-10-30 07:19:58 - yearbook_downloader - INFO -   Downloaded: natz2006%2520supp_0.zip
+2025-10-30 07:19:59 - yearbook_downloader - INFO -   Downloaded: ni2006_0.zip
+2025-10-30 07:20:00 - yearbook_downloader - INFO -   Downloaded: ni2006%2520supp_0.zip
+2025-10-30 07:20:01 - yearbook_downloader - INFO -   Downloaded: enf2006_0.zip
+2025-10-30 07:20:01 - yearbook_downloader - INFO - Yearbook 2006: Downloaded 10, Skipped 0, Failed 0
+2025-10-30 07:20:02 - yearbook_downloader - INFO - Processing Yearbook 2005
+2025-10-30 07:20:04 - yearbook_downloader - INFO - Yearbook 2005: Found 9 file(s)
+2025-10-30 07:20:05 - yearbook_downloader - INFO -   Downloaded: ois_2005_yearbook.pdf
+2025-10-30 07:20:06 - yearbook_downloader - INFO -   Downloaded: lpr2005_0.zip
+2025-10-30 07:20:08 - yearbook_downloader - INFO -   Downloaded: lpr2005%2520supp_0.zip
+2025-10-30 07:20:09 - yearbook_downloader - INFO -   Downloaded: rfa2005_0.zip
+2025-10-30 07:20:10 - yearbook_downloader - INFO -   Downloaded: natz2005_0.zip
+2025-10-30 07:20:11 - yearbook_downloader - INFO -   Downloaded: natz2005%2520supp_0.zip
+2025-10-30 07:20:12 - yearbook_downloader - INFO -   Downloaded: ni2005_0.zip
+2025-10-30 07:20:12 - yearbook_downloader - INFO -   Downloaded: ni2005%2520supp_0.zip
+2025-10-30 07:20:14 - yearbook_downloader - INFO -   Downloaded: enf%25202005.zip
+2025-10-30 07:20:14 - yearbook_downloader - INFO - Yearbook 2005: Downloaded 9, Skipped 0, Failed 0
+2025-10-30 07:20:15 - yearbook_downloader - INFO - Processing Yearbook 2004
+2025-10-30 07:20:16 - yearbook_downloader - INFO - Yearbook 2004: Found 9 file(s)
+2025-10-30 07:20:17 - yearbook_downloader - INFO -   Downloaded: yearbook2004.pdf
+2025-10-30 07:20:18 - yearbook_downloader - INFO -   Downloaded: lpr2004_2.zip
+2025-10-30 07:20:19 - yearbook_downloader - INFO -   Downloaded: lpr2004%2520supp_2.zip
+2025-10-30 07:20:21 - yearbook_downloader - INFO -   Downloaded: rfa%25202004.zip
+2025-10-30 07:20:22 - yearbook_downloader - INFO -   Downloaded: natz2004_0.zip
+2025-10-30 07:20:23 - yearbook_downloader - INFO -   Downloaded: natz2004%2520supp_0.zip
+2025-10-30 07:20:24 - yearbook_downloader - INFO -   Downloaded: ni2004_0.zip
+2025-10-30 07:20:25 - yearbook_downloader - INFO -   Downloaded: ni2004%2520supp_0.zip
+2025-10-30 07:20:27 - yearbook_downloader - INFO -   Downloaded: enf2004_0.zip
+2025-10-30 07:20:27 - yearbook_downloader - INFO - Yearbook 2004: Downloaded 9, Skipped 0, Failed 0
+2025-10-30 07:20:28 - yearbook_downloader - INFO - Processing Yearbook 2003
+2025-10-30 07:20:29 - yearbook_downloader - INFO - Yearbook 2003: Found 9 file(s)
+2025-10-30 07:20:30 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2003.pdf
+2025-10-30 07:20:31 - yearbook_downloader - INFO -   Downloaded: lpr2003.zip
+2025-10-30 07:20:32 - yearbook_downloader - INFO -   Downloaded: lpr2003%2520supp.zip
+2025-10-30 07:20:34 - yearbook_downloader - INFO -   Downloaded: rfa2003.zip
+2025-10-30 07:20:35 - yearbook_downloader - INFO -   Downloaded: natz2003.zip
+2025-10-30 07:20:36 - yearbook_downloader - INFO -   Downloaded: natz2003%2520supp.zip
+2025-10-30 07:20:37 - yearbook_downloader - INFO -   Downloaded: ni2003.zip
+2025-10-30 07:20:38 - yearbook_downloader - INFO -   Downloaded: ni2003%2520supp.zip
+2025-10-30 07:20:40 - yearbook_downloader - INFO -   Downloaded: enf2003.zip
+2025-10-30 07:20:40 - yearbook_downloader - INFO - Yearbook 2003: Downloaded 9, Skipped 0, Failed 0
+2025-10-30 07:20:41 - yearbook_downloader - INFO - Processing Yearbook 2002
+2025-10-30 07:20:42 - yearbook_downloader - INFO - Yearbook 2002: Found 9 file(s)
+2025-10-30 07:20:44 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2002.pdf
+2025-10-30 07:20:45 - yearbook_downloader - INFO -   Downloaded: lpr2002.zip
+2025-10-30 07:20:47 - yearbook_downloader - INFO -   Downloaded: lpr2002%2520supp.zip
+2025-10-30 07:20:48 - yearbook_downloader - INFO -   Downloaded: rfa2002.zip
+2025-10-30 07:20:49 - yearbook_downloader - INFO -   Downloaded: natz2002.zip
+2025-10-30 07:20:50 - yearbook_downloader - INFO -   Downloaded: natz2002%2520supp.zip
+2025-10-30 07:20:52 - yearbook_downloader - INFO -   Downloaded: ni2002.zip
+2025-10-30 07:20:53 - yearbook_downloader - INFO -   Downloaded: ni2002%2520supp.zip
+2025-10-30 07:20:54 - yearbook_downloader - INFO -   Downloaded: enf2002.zip
+2025-10-30 07:20:54 - yearbook_downloader - INFO - Yearbook 2002: Downloaded 9, Skipped 0, Failed 0
+2025-10-30 07:20:55 - yearbook_downloader - INFO - Processing Yearbook 2001
+2025-10-30 07:20:56 - yearbook_downloader - INFO - Yearbook 2001: Found 6 file(s)
+2025-10-30 07:21:01 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2001.pdf
+2025-10-30 07:21:02 - yearbook_downloader - INFO -   Downloaded: lpr2001.zip
+2025-10-30 07:21:04 - yearbook_downloader - INFO -   Downloaded: rfa2001.zip
+2025-10-30 07:21:05 - yearbook_downloader - INFO -   Downloaded: natz2001.zip
+2025-10-30 07:21:06 - yearbook_downloader - INFO -   Downloaded: ni2001.zip
+2025-10-30 07:21:07 - yearbook_downloader - INFO -   Downloaded: enf2001.zip
+2025-10-30 07:21:07 - yearbook_downloader - INFO - Yearbook 2001: Downloaded 6, Skipped 0, Failed 0
+2025-10-30 07:21:08 - yearbook_downloader - INFO - Processing Yearbook 2000
+2025-10-30 07:21:10 - yearbook_downloader - INFO - Yearbook 2000: Found 6 file(s)
+2025-10-30 07:21:10 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_2000.pdf
+2025-10-30 07:21:12 - yearbook_downloader - INFO -   Downloaded: lpr2000.zip
+2025-10-30 07:21:13 - yearbook_downloader - INFO -   Downloaded: rfa2000.zip
+2025-10-30 07:21:14 - yearbook_downloader - INFO -   Downloaded: natz2000.zip
+2025-10-30 07:21:15 - yearbook_downloader - INFO -   Downloaded: ni2000.zip
+2025-10-30 07:21:17 - yearbook_downloader - INFO -   Downloaded: enf2000.zip
+2025-10-30 07:21:17 - yearbook_downloader - INFO - Yearbook 2000: Downloaded 6, Skipped 0, Failed 0
+2025-10-30 07:21:18 - yearbook_downloader - INFO - Processing Yearbook 1996
+2025-10-30 07:21:19 - yearbook_downloader - INFO - Yearbook 1996: Found 7 file(s)
+2025-10-30 07:21:20 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_1999.pdf
+2025-10-30 07:21:21 - yearbook_downloader - INFO -   Downloaded: ois_1999yb_4_0.zip
+2025-10-30 07:21:23 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_1998.pdf
+2025-10-30 07:21:24 - yearbook_downloader - INFO -   Downloaded: ois_1998yb_0.zip
+2025-10-30 07:21:26 - yearbook_downloader - INFO -   Downloaded: yearbook_immigration_statistics_1997.pdf
+2025-10-30 07:21:27 - yearbook_downloader - INFO -   Downloaded: statyearbk96_0.zip
+2025-10-30 07:21:28 - yearbook_downloader - INFO -   Downloaded: ins_yearbook_immigration_statistics_1996.pdf
+2025-10-30 07:21:28 - yearbook_downloader - INFO - Yearbook 1996: Downloaded 7, Skipped 0, Failed 0
+2025-10-30 07:21:29 - yearbook_downloader - INFO - Download Summary: Total downloaded 226, Skipped 0, Failed 0
+2025-10-30 07:21:29 - yearbook_downloader - INFO - Manifest saved to download_manifest.json
+2025-10-30 07:21:29 - yearbook_downloader - INFO - ======================================================================
+2025-10-30 07:21:29 - yearbook_downloader - INFO - ✓ Download completed successfully!
+2025-10-30 07:21:29 - yearbook_downloader - INFO - ======================================================================
