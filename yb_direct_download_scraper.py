@@ -50,8 +50,8 @@ LOG_FOLDER = "test_scrapes/scraper_logs"
 LOG_LEVEL = logging.INFO
 
 # Scraping Parameters
-START_YEAR = 2012  # None = 1996 (earliest)
-END_YEAR = 2020  # None = current year + 1 (dynamic, checks for new data)
+START_YEAR = None  # None = 1996 (earliest)
+END_YEAR = None  # None = current year + 1 (dynamic, checks for new data)
 DYNAMIC_END_YEAR = True  # Enable dynamic year detection for current/next year
 
 # Deduplication Configuration
