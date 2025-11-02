@@ -5,9 +5,13 @@ Immigration Yearbook Direct Download Scraper
 Downloads all available files (XLSX, XLS, PDF, ZIP) from OHSS yearbook pages
 and organizes them by year in a structured directory hierarchy.
 
-This complements the table scraper by capturing downloadable datasets in their
-original formats (Excel workbooks, PDFs, ZIP archives) which may contain
-additional data or formatting not available in the HTML tables.
+Features:
+- Dual-layer deduplication (HTTP headers + SHA256 content hashing)
+- Automatic manifest cleanup of missing files
+- Year-based folder organization
+- Exponential backoff retry logic with polite delays
+- Comprehensive logging to file and console
+- Dynamic year detection (current + next year)
 
 Target: https://ohss.dhs.gov/topics/immigration/yearbook (1996-2024)
 Files: *.xlsx, *.xls, *.pdf, *.zip
@@ -17,7 +21,6 @@ Output Structure:
     ├── 2023Yearbook/
     └── [...]
 """
-
 import os
 import re
 import requests
@@ -39,6 +42,22 @@ from typing import Dict, List, Set, Optional
 BASE = "https://ohss.dhs.gov"
 ROOT = "https://ohss.dhs.gov/topics/immigration/yearbook"
 
+# Output Configuration
+OUTPUT_FOLDER = "test_scrapes/yearbook_downloads"  # Where to save files
+
+# Logging Configuration
+LOG_FOLDER = "test_scrapes/scraper_logs"
+LOG_LEVEL = logging.INFO
+
+# Scraping Parameters
+START_YEAR = 2012  # None = 1996 (earliest)
+END_YEAR = 2020  # None = current year + 1 (dynamic, checks for new data)
+DYNAMIC_END_YEAR = True  # Enable dynamic year detection for current/next year
+
+# Deduplication Configuration
+MANIFEST_FILENAME = "download_manifest.json"  # Tracks downloaded files
+SKIP_DUPLICATES = True  # Skip re-downloading identical files
+
 # HTTP Request Configuration
 HTTP_TIMEOUT = 30  # seconds
 REQUEST_DELAY = 1  # seconds between requests (polite crawling)
@@ -50,28 +69,13 @@ MAX_RETRIES = 3  # Maximum number of retry attempts
 RETRY_BACKOFF_FACTOR = 2  # Exponential backoff: 1s, 2s, 4s
 RETRY_DELAY_INITIAL = 1  # Initial delay in seconds
 
-# Logging Configuration
-LOG_FOLDER = "scraper_logs"
-LOG_LEVEL = logging.INFO
-
 # Download Configuration
 ALLOWED_EXTENSIONS = {'.xlsx', '.xls', '.pdf', '.zip'}  # File types to download
 MAX_FILE_SIZE = 500 * 1024 * 1024  # 500 MB limit per file
 
-# Deduplication Configuration
-MANIFEST_FILENAME = "download_manifest.json"  # Tracks downloaded files
-SKIP_DUPLICATES = True  # Skip re-downloading identical files
-
-# Output Configuration
-OUTPUT_FOLDER = "yearbook_downloads"  # Where to save files
-
-# Scraping Parameters
-START_YEAR = None  # None = 1996 (earliest)
-END_YEAR = None  # None = current year + 1 (dynamic, checks for new data)
-DYNAMIC_END_YEAR = True  # Enable dynamic year detection for current/next year
-
 # ============================================================================
-
+# LOGGING SETUP
+# ============================================================================
 
 def setup_logging() -> logging.Logger:
     """Setup logging to both file and console."""
@@ -106,6 +110,10 @@ def setup_logging() -> logging.Logger:
     
     return logger
 
+
+# ============================================================================
+# HTTP UTILITIES - Request handling with retries
+# ============================================================================
 
 def make_request_with_retry(url: str, method: str = "GET", max_retries: int = MAX_RETRIES,
                             stream: bool = False, logger: logging.Logger = None) -> Optional[requests.Response]:
@@ -176,6 +184,10 @@ def make_request_with_retry(url: str, method: str = "GET", max_retries: int = MA
     return None
 
 
+# ============================================================================
+# MANIFEST MANAGEMENT - Load, save, and cleanup operations
+# ============================================================================
+
 def load_manifest(manifest_path: str = MANIFEST_FILENAME) -> Dict:
     """Load the download manifest from a JSON file."""
     if os.path.exists(manifest_path):
@@ -199,6 +211,53 @@ def save_manifest(manifest: Dict, manifest_path: str = MANIFEST_FILENAME):
     with open(manifest_path, "w") as f:
         json.dump(manifest, f, indent=2)
 
+
+def cleanup_manifest(manifest: Dict, base_output_folder: str = OUTPUT_FOLDER, 
+                     logger: logging.Logger = None) -> int:
+    """
+    Remove manifest entries where files no longer exist on disk.
+    
+    Args:
+        manifest: The manifest dictionary to clean
+        base_output_folder: Root folder where yearbook files are stored
+        logger: Logger instance for logging cleanup activity
+    
+    Returns:
+        Number of entries removed
+    """
+    if logger is None:
+        logger = logging.getLogger("yearbook_downloader")
+    
+    files_dict = manifest.get("files", {})
+    removed_count = 0
+    
+    # Check each file entry
+    for file_key in list(files_dict.keys()):
+        file_entry = files_dict[file_key]
+        year = file_entry.get("year")
+        filename = file_entry.get("filename")
+        
+        # Reconstruct the expected filepath
+        if year and filename:
+            expected_filepath = os.path.join(base_output_folder, f"{year}Yearbook", filename)
+            
+            # If file doesn't exist, remove the entry
+            if not os.path.exists(expected_filepath):
+                del files_dict[file_key]
+                removed_count += 1
+                logger.info(f"  Removed stale manifest entry: {file_key} (file not found at {expected_filepath})")
+    
+    if removed_count > 0:
+        logger.info(f"Manifest cleanup: Removed {removed_count} stale entries")
+    else:
+        logger.debug(f"Manifest cleanup: No stale entries found")
+    
+    return removed_count
+
+
+# ============================================================================
+# DEDUPLICATION - Hash computation and URL change detection
+# ============================================================================
 
 def compute_file_hash(filepath: str) -> str:
     """Compute SHA256 hash of a file."""
@@ -246,6 +305,10 @@ def check_url_changed(url: str, manifest: Dict, logger: logging.Logger = None) -
     
     return True  # URL is new or changed
 
+
+# ============================================================================
+# HTML PARSING - Extract links and yearbook information
+# ============================================================================
 
 def get_download_links(yearbook_url: str, logger: logging.Logger = None) -> List[Dict]:
     """Extract all downloadable file links from a yearbook page."""
@@ -360,6 +423,10 @@ def get_available_yearbooks(root_url: str = ROOT, start_year: int = None, end_ye
     return sorted(filtered, key=lambda x: x["year"], reverse=True)
 
 
+# ============================================================================
+# FILE DOWNLOAD - Streaming download with size checks
+# ============================================================================
+
 def download_file(url: str, filepath: str, max_size: int = MAX_FILE_SIZE,
                   logger: logging.Logger = None) -> bool:
     """Download a file from URL to filepath with retries."""
@@ -408,6 +475,10 @@ def download_file(url: str, filepath: str, max_size: int = MAX_FILE_SIZE,
         return False
 
 
+# ============================================================================
+# SCRAPING ORCHESTRATION - Main download workflow
+# ============================================================================
+
 def scrape_yearbooks(root_url: str = ROOT, start_year: int = None, end_year: int = None,
                      output_folder: str = OUTPUT_FOLDER, manifest: Dict = None,
                      logger: logging.Logger = None) -> Dict:
@@ -430,6 +501,9 @@ def scrape_yearbooks(root_url: str = ROOT, start_year: int = None, end_year: int
     
     if manifest is None:
         manifest = {}
+
+    # Clean up any stale entries (files that no longer exist on disk)
+    cleanup_manifest(manifest, base_output_folder=output_folder, logger=logger)
 
     logger.info(f"Fetching yearbook information from {root_url}")
     yearbooks = get_available_yearbooks(root_url, start_year=start_year, end_year=end_year, logger=logger)
@@ -500,7 +574,7 @@ def scrape_yearbooks(root_url: str = ROOT, start_year: int = None, end_year: int
                     file_hash = compute_file_hash(filepath)
                     if "files" not in manifest:
                         manifest["files"] = {}
-                    manifest[file_key] = {
+                    manifest["files"][file_key] = {
                         "url": file_url,
                         "hash": file_hash,
                         "year": year,
@@ -524,6 +598,10 @@ def scrape_yearbooks(root_url: str = ROOT, start_year: int = None, end_year: int
     logger.info(f"Download Summary: Total downloaded {total_downloaded}, Skipped {total_skipped}, Failed {total_failed}")
     return manifest
 
+
+# ============================================================================
+# MAIN ENTRY POINT - Setup and execution
+# ============================================================================
 
 def main():
     """Main entry point."""
@@ -573,20 +651,33 @@ def main():
         manifest_path = os.path.join(OUTPUT_FOLDER, MANIFEST_FILENAME)
         save_manifest(manifest, manifest_path)
         
-        # Report new data findings
+        # Report manifest changes
         manifest_size_after = len(manifest.get("files", {})) if manifest else 0
         new_files = manifest_size_after - manifest_size_before
         
         logger.info(f"Manifest saved to {manifest_path}")
         logger.info("=" * 70)
+        logger.info("MANIFEST CHANGES SUMMARY:")
+        logger.info(f"  Files before:  {manifest_size_before}")
+        logger.info(f"  Files after:   {manifest_size_after}")
+        if new_files > 0:
+            logger.info(f"  [+] Added:     {new_files} file(s)")
+        elif new_files < 0:
+            logger.info(f"  [-] Removed:   {abs(new_files)} file(s)")
+        else:
+            logger.info(f"  [*] Unchanged: No manifest changes")
+        logger.info("=" * 70)
         
         if DYNAMIC_END_YEAR:
+            # Use the actual start/end years that were passed (or configured) for detection
+            detection_start = START_YEAR if START_YEAR is not None else 'earliest'
+            detection_end = end_year
             logger.info("NEW DATA DETECTION REPORT:")
             if new_files > 0:
-                logger.info(f"  [+] Found {new_files} new file(s) for {current_year}/{current_year + 1}")
+                logger.info(f"  [+] Found {new_files} new file(s) for {detection_start}-{detection_end}")
                 logger.info(f"      Total files in manifest: {manifest_size_before} -> {manifest_size_after}")
             else:
-                logger.info(f"  [-] No new data found for {current_year}/{current_year + 1}")
+                logger.info(f"  [-] No new data found for {detection_start}-{detection_end}")
                 logger.info(f"      Total files in manifest: {manifest_size_after} (unchanged)")
             logger.info("=" * 70)
         
