@@ -181,10 +181,17 @@ def load_manifest(manifest_path: str = MANIFEST_FILENAME) -> Dict:
     if os.path.exists(manifest_path):
         try:
             with open(manifest_path, "r") as f:
-                return json.load(f)
+                data = json.load(f)
+                # Support both old format (flat) and new format (with metadata)
+                if isinstance(data, dict) and "files" in data:
+                    return data
+                # Convert old flat format to new format if needed
+                if isinstance(data, dict) and data and not "files" in data:
+                    return {"files": data, "_url_meta": {}}
+                return data
         except (json.JSONDecodeError, IOError):
-            return {}
-    return {}
+            return {"files": {}, "_url_meta": {}}
+    return {"files": {}, "_url_meta": {}}
 
 
 def save_manifest(manifest: Dict, manifest_path: str = MANIFEST_FILENAME):
@@ -200,6 +207,44 @@ def compute_file_hash(filepath: str) -> str:
         for byte_block in iter(lambda: f.read(4096), b""):
             sha256.update(byte_block)
     return sha256.hexdigest()
+
+
+def check_url_changed(url: str, manifest: Dict, logger: logging.Logger = None) -> bool:
+    """
+    Check if a URL has changed using ETag/Last-Modified headers.
+    
+    Returns True if URL is new or has changed, False if unchanged.
+    Caches the header metadata in manifest["_url_meta"] for next run.
+    """
+    if logger is None:
+        logger = logging.getLogger("yearbook_downloader")
+    
+    try:
+        resp = requests.head(url, headers=HEADERS, timeout=HTTP_TIMEOUT, allow_redirects=True)
+        resp.raise_for_status()
+    except Exception as e:
+        logger.debug(f"Could not fetch headers for {url}: {e}")
+        return True  # Download if we can't check headers
+    
+    # Extract ETag and Last-Modified headers
+    etag = resp.headers.get("ETag", "")
+    last_modified = resp.headers.get("Last-Modified", "")
+    header_key = f"{etag}|{last_modified}"
+    
+    # Get stored header key from manifest
+    url_meta = manifest.get("_url_meta", {})
+    stored_key = url_meta.get(url)
+    
+    # Update manifest with new header key
+    if "_url_meta" not in manifest:
+        manifest["_url_meta"] = {}
+    manifest["_url_meta"][url] = header_key
+    
+    # Check if headers match (URL unchanged)
+    if stored_key and stored_key == header_key:
+        return False  # URL unchanged
+    
+    return True  # URL is new or changed
 
 
 def get_download_links(yearbook_url: str, logger: logging.Logger = None) -> List[Dict]:
@@ -427,16 +472,23 @@ def scrape_yearbooks(root_url: str = ROOT, start_year: int = None, end_year: int
             filepath = os.path.join(year_folder, filename)
             file_key = f"{year}/{filename}"  # Unique key for manifest
 
-            # Check manifest for duplicate
-            if SKIP_DUPLICATES and file_key in manifest:
-                stored_hash = manifest[file_key].get("hash")
+            # Layer 1: Check HTTP headers (ETag/Last-Modified) - cheapest check
+            if not check_url_changed(file_url, manifest, logger=logger):
+                year_skipped += 1
+                total_skipped += 1
+                logger.info(f"  Skipped (unchanged per headers): {filename}")
+                continue
+
+            # Layer 2: Check manifest hash for local file - more reliable
+            if SKIP_DUPLICATES and file_key in manifest.get("files", {}):
+                stored_hash = manifest["files"][file_key].get("hash")
                 if os.path.exists(filepath):
                     try:
                         current_hash = compute_file_hash(filepath)
                         if current_hash == stored_hash:
                             year_skipped += 1
                             total_skipped += 1
-                            logger.debug(f"  Skipped (unchanged): {filename}")
+                            logger.debug(f"  Skipped (hash match): {filename}")
                             continue
                     except Exception as e:
                         logger.warning(f"  Could not verify hash for {filename}: {e}")
@@ -446,6 +498,8 @@ def scrape_yearbooks(root_url: str = ROOT, start_year: int = None, end_year: int
                 try:
                     # Compute and store hash
                     file_hash = compute_file_hash(filepath)
+                    if "files" not in manifest:
+                        manifest["files"] = {}
                     manifest[file_key] = {
                         "url": file_url,
                         "hash": file_hash,
@@ -489,7 +543,7 @@ def main():
     logger.info(f"End Year: {end_year}")
     logger.info(f"Dynamic Year Detection: {'Enabled' if DYNAMIC_END_YEAR else 'Disabled'}")
     if DYNAMIC_END_YEAR:
-        logger.info(f"  → Checking for new data from {current_year} and {current_year + 1}")
+        logger.info(f"  >> Checking for new data from {current_year} and {current_year + 1}")
     logger.info(f"Output Folder: {OUTPUT_FOLDER}")
     logger.info(f"File Types: {', '.join(ALLOWED_EXTENSIONS)}")
     logger.info(f"Max Retries: {MAX_RETRIES}")
@@ -500,9 +554,9 @@ def main():
         # Load existing manifest from output folder
         manifest_path = os.path.join(OUTPUT_FOLDER, MANIFEST_FILENAME)
         manifest = load_manifest(manifest_path)
-        manifest_size_before = len(manifest) if manifest else 0
+        manifest_size_before = len(manifest.get("files", {})) if manifest else 0
         
-        if manifest:
+        if manifest and manifest.get("files"):
             logger.info(f"Loaded manifest with {manifest_size_before} previously downloaded file(s)")
 
         # Scrape and download
@@ -520,7 +574,7 @@ def main():
         save_manifest(manifest, manifest_path)
         
         # Report new data findings
-        manifest_size_after = len(manifest) if manifest else 0
+        manifest_size_after = len(manifest.get("files", {})) if manifest else 0
         new_files = manifest_size_after - manifest_size_before
         
         logger.info(f"Manifest saved to {manifest_path}")
@@ -529,18 +583,18 @@ def main():
         if DYNAMIC_END_YEAR:
             logger.info("NEW DATA DETECTION REPORT:")
             if new_files > 0:
-                logger.info(f"  ✓ Found {new_files} new file(s) for {current_year}/{current_year + 1}")
-                logger.info(f"    Total files in manifest: {manifest_size_before} → {manifest_size_after}")
+                logger.info(f"  [+] Found {new_files} new file(s) for {current_year}/{current_year + 1}")
+                logger.info(f"      Total files in manifest: {manifest_size_before} -> {manifest_size_after}")
             else:
-                logger.info(f"  ✗ No new data found for {current_year}/{current_year + 1}")
-                logger.info(f"    Total files in manifest: {manifest_size_after} (unchanged)")
+                logger.info(f"  [-] No new data found for {current_year}/{current_year + 1}")
+                logger.info(f"      Total files in manifest: {manifest_size_after} (unchanged)")
             logger.info("=" * 70)
         
-        logger.info("✓ Download completed successfully!")
+        logger.info("[+] Download completed successfully!")
         logger.info("=" * 70)
 
     except Exception as e:
-        logger.error(f"✗ Error during download: {e}", exc_info=True)
+        logger.error(f"[-] Error during download: {e}", exc_info=True)
         return 1
 
     return 0
