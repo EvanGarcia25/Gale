@@ -14,6 +14,7 @@ Our goal is to automatically collect, organize, and deduplicate U.S. Department 
 - **Refugee & Asylum Statistics** — arrivals by nationality, demographic breakdown
   - While Gale doesn't currently deal with refugee/asylee changes of status, could be a possible avenue of business (probably with the government).
 - **Naturalizations** — by class, region, country
+- **Enforcement Actions** - including alien apprehensions, removals, and returns.
 - **Supplemental Tables** — specialized analytical datasets
 
 Each yearbook represents a fiscal year (FY).
@@ -90,5 +91,4 @@ The `download_manifest.json` tracks all downloaded files and their metadata:
 ### Next Steps
 
 - Add robots.txt parsing and respect for site crawl-delay.
-- Emit a short CSV summary of manifest changes per run (new/updated/removed).
 - Performance benchmarking of header-based vs content-based deduplication efficiency.
