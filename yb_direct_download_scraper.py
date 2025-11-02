@@ -43,10 +43,10 @@ BASE = "https://ohss.dhs.gov"
 ROOT = "https://ohss.dhs.gov/topics/immigration/yearbook"
 
 # Output Configuration
-OUTPUT_FOLDER = "test_scrapes/yearbook_downloads"  # Where to save files
+OUTPUT_FOLDER = "yearbook_downloads"  # Where to save files
 
 # Logging Configuration
-LOG_FOLDER = "test_scrapes/scraper_logs"
+LOG_FOLDER = "scraper_logs"
 LOG_LEVEL = logging.INFO
 
 # Scraping Parameters

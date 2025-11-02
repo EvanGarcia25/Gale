@@ -21,6 +21,39 @@ Each yearbook represents a fiscal year (FY).
 
 ---
 
+## Quick Start
+
+### Requirements
+
+- **Python:** 3.10 or higher
+- **pip:** Python package manager (comes with Python)
+
+### Installation 
+
+1. Clone the repository:
+```bash
+git clone https://github.com/EvanGarcia25/Gale.git
+cd Gale
+```
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+**Packages:**
+- `requests==2.31.0` — HTTP requests with retries
+- `beautifulsoup4==4.12.2` — HTML parsing
+- `lxml==4.9.3` — XML/HTML parser (required by BeautifulSoup)
+
+3. Run the scraper:
+```bash
+python yb_direct_download_scraper.py
+```
+
+Files will be downloaded to `yearbook_downloads/` and logs saved to `scraper_logs/`. The folders will be automatically created if they don't exist. 
+
+
+---
+
 ## Data Source and Structure
 
 The OHSS website organizes yearbooks hierarchically:
