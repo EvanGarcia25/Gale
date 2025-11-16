@@ -259,3 +259,43 @@ class ManifestState:
         self._append_row_atomic(row)
         log.info(f"Registered existing file: {period} | {url} -> {file_path}")
         return True
+
+    def update_saved_path(self, period: str, url: str, new_path: str) -> bool:
+        """
+        Update the saved_path for an existing manifest entry.
+        Useful when a file is moved or a zip is extracted.
+        
+        Returns True if updated, False if entry not found.
+        """
+        key = (period, url)
+        
+        if key not in self.index:
+            log.warning(f"Cannot update saved_path: entry not found for {period} | {url}")
+            return False
+        
+        self.lock.acquire()
+        try:
+            # Read all rows
+            tmp = self.manifest_path.with_suffix(".tmp.csv")
+            with self.manifest_path.open("r", newline="") as src, tmp.open("w", newline="") as dst:
+                reader = csv.DictReader(src)
+                writer = csv.DictWriter(dst, fieldnames=CSV_HEADERS)
+                writer.writeheader()
+                
+                for row in reader:
+                    if row["period"] == period and row["url"] == url:
+                        # Update the saved_path
+                        row["saved_path"] = new_path
+                        row["filename"] = os.path.basename(new_path)
+                    writer.writerow(row)
+            
+            os.replace(tmp, self.manifest_path)
+            
+            # Update in-memory index
+            self.index[key]["saved_path"] = new_path
+            self.index[key]["filename"] = os.path.basename(new_path)
+            
+            log.info(f"Updated saved_path: {period} | {url} -> {new_path}")
+            return True
+        finally:
+            self.lock.release()

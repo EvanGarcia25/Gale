@@ -35,9 +35,29 @@ def cleanup_manifest(manifest_path: str):
         
         for row in rows:
             saved_path = row.get("saved_path", "")
-            if saved_path and Path(saved_path).exists():
+            if not saved_path:
+                removed_count += 1
+                logger.info(f"Removing entry with no saved_path: {row['period']} | {row['url']}")
+                continue
+            
+            saved_path_obj = Path(saved_path)
+            
+            # Check if the path exists (either as file or directory)
+            if saved_path_obj.exists():
                 valid_rows.append(row)
             else:
+                # Special case: if the saved_path was a .zip file, check if the extracted folder exists
+                if saved_path.endswith('.zip'):
+                    # Check if the extracted folder exists (zip name without .zip extension)
+                    folder_path = saved_path_obj.with_suffix('')
+                    if folder_path.exists() and folder_path.is_dir():
+                        # Update the row to point to the folder instead
+                        row["saved_path"] = str(folder_path.resolve())
+                        row["filename"] = folder_path.name
+                        valid_rows.append(row)
+                        logger.info(f"Updated zip entry to point to extracted folder: {row['period']} | {folder_path}")
+                        continue
+                
                 removed_count += 1
                 logger.info(f"Removing stale entry: {row['period']} | {row['url']} | {saved_path}")
         
