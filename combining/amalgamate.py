@@ -8,32 +8,35 @@ from collections import defaultdict
 def find_main_data_file(year_folder):
     """
     Locate the main data file for a given year folder.
+    Prefers .parquet files over .xlsx for faster loading.
     
     Rules:
-    - 2010-2019: Only .xlsx file in the folder
+    - 2010-2019: Only data file in the folder
     - 2020-2025: File with "Disclosure_Data" in name
     - If two files match "Disclosure_Data", take the one with "new_form" or "revised_form"
     """
-    xlsx_files = [f for f in os.listdir(year_folder) if f.endswith('.xlsx')]
-    
-    # 2010-2019: Only one xlsx file
-    if len(xlsx_files) == 1:
-        return os.path.join(year_folder, xlsx_files[0])
-    
-    # 2020+: Files with "Disclosure_Data"
-    disclosure_files = [f for f in xlsx_files if 'Disclosure_Data' in f]
-    
-    if len(disclosure_files) == 1:
-        return os.path.join(year_folder, disclosure_files[0])
-    
-    # Multiple matches: prefer new_form or revised_form
-    for f in disclosure_files:
-        if 'new_form' in f.lower() or 'revised_form' in f.lower():
-            return os.path.join(year_folder, f)
-    
-    # Fallback: return first match
-    if disclosure_files:
-        return os.path.join(year_folder, disclosure_files[0])
+    # Try parquet files first, fall back to xlsx
+    for ext in ['.parquet', '.xlsx']:
+        data_files = [f for f in os.listdir(year_folder) if f.endswith(ext)]
+        
+        # 2010-2019: Only one data file
+        if len(data_files) == 1:
+            return os.path.join(year_folder, data_files[0])
+        
+        # 2020+: Files with "Disclosure_Data"
+        disclosure_files = [f for f in data_files if 'Disclosure_Data' in f]
+        
+        if len(disclosure_files) == 1:
+            return os.path.join(year_folder, disclosure_files[0])
+        
+        # Multiple matches: prefer new_form or revised_form
+        for f in disclosure_files:
+            if 'new_form' in f.lower() or 'revised_form' in f.lower():
+                return os.path.join(year_folder, f)
+        
+        # Fallback: return first match
+        if disclosure_files:
+            return os.path.join(year_folder, disclosure_files[0])
     
     return None
 
@@ -53,6 +56,16 @@ def load_mapping_dict(csv_path):
     return mapping
 
 
+def read_data_file(file_path, **kwargs):
+    """
+    Read a data file, choosing the appropriate reader based on file extension.
+    """
+    if file_path.endswith('.parquet'):
+        return pd.read_parquet(file_path, **kwargs)
+    else:
+        return pd.read_excel(file_path, **kwargs)
+
+
 def get_2025_schema(base_dir):
     """
     Get the column names from the 2025 data file (the target schema).
@@ -63,7 +76,10 @@ def get_2025_schema(base_dir):
     if not main_file:
         raise Exception("Could not find 2025 main data file")
     
-    df = pd.read_excel(main_file, nrows=0)
+    if main_file.endswith('.parquet'):
+        df = pd.read_parquet(main_file).head(0)
+    else:
+        df = pd.read_excel(main_file, nrows=0)
     return df.columns.tolist()
 
 
@@ -81,10 +97,10 @@ def main():
     target_schema = get_2025_schema(base_dir)
     print(f"Target schema has {len(target_schema)} columns")
     
-    # Years to process
-    years = [2020, 2021, 2025]  # Test run: specific years only
+    # Years to process - get all available years
+    years = sorted([int(d) for d in os.listdir(base_dir) if d.isdigit() and os.path.isdir(os.path.join(base_dir, d))])
     
-    # Columns to ignore in 2015
+    # Columns to ignore in the 2015 data, as they appear nowhere else in any other data file
     ignore_columns_2015 = {
         'CASE_ASSIGNED_TO_ANALYST',
         'CASE_SENT_TO_CO_FOR_APPROVAL',
@@ -118,7 +134,7 @@ def main():
         try:
             # Read the entire dataframe with a progress indicator
             print(f"    Reading file...", end='', flush=True)
-            df = pd.read_excel(main_file, engine='openpyxl')
+            df = read_data_file(main_file)
             print(f" Done!")
             print(f"    Loaded {len(df)} rows with {len(df.columns)} columns")
             
@@ -175,10 +191,10 @@ def main():
         final_df = pd.concat(all_dfs, ignore_index=True)
         print(f"Final dataset has {len(final_df)} rows and {len(final_df.columns)} columns")
         
-        # Save to Excel
-        print("Saving to Excel (this may take a while for large files)...", end='', flush=True)
-        output_file = Path(__file__).parent / "amalgamated_data.xlsx"
-        final_df.to_excel(output_file, index=False, engine='openpyxl')
+        # Save to Parquet
+        print("Saving to Parquet...", end='', flush=True)
+        output_file = Path(__file__).parent / "amalgamated_data.parquet"
+        final_df.to_parquet(output_file, index=False)
         print(" Done!")
         print(f"Saved amalgamated data to: {output_file}")
         
