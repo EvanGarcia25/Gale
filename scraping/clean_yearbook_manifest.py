@@ -1,7 +1,8 @@
 import csv
 import logging
 from pathlib import Path
-from manifest_state import FileLock, CSV_HEADERS
+
+from download_manifest import FileLock, CSV_HEADERS
 
 def setup_logging():
     logging.basicConfig(

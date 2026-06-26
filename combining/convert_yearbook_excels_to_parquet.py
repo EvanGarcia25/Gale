@@ -1,7 +1,9 @@
 import os
+from pathlib import Path
+
 import pandas as pd
 
-BASE_PATH = "data/Prevailing Wage Program"
+BASE_PATH = str(Path.home() / "Desktop" / "ohss_yearbooks")
 
 def convert_all_excels():
     for year in os.listdir(BASE_PATH):

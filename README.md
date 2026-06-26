@@ -8,12 +8,12 @@ Source: <https://ohss.dhs.gov/topics/immigration/yearbook>
 
 | Step | Script | Description |
 |------|--------|-------------|
-| 1 | `scrape.py` | Downloads raw disclosure files from the DOL website into `data/` |
-| 2 | `convert_to_parquet_pw.py` | Converts `.xlsx` files to `.parquet` for faster I/O |
-| 3 | `amalgamate.py` | Maps columns across all years to the 2025 schema and concatenates into one dataset |
-| 4 | `test_amalgamate.ipynb` | Validation checks on the final amalgamated file |
+| 1 | `scraping/run_yearbook_pipeline.py` | Cleans the yearbook manifest and downloads the OHSS yearbooks to `Desktop/ohss_yearbooks/` |
+| 2 | `combining/convert_yearbook_excels_to_parquet.py` | Converts downloaded `.xlsx` files to `.parquet` for faster I/O |
+| 3 | `combining/build_amalgamated_dataset.py` | Maps columns across all years to the 2025 schema and concatenates into one dataset |
+| 4 | `combining/test_amalgamate.ipynb` | Validation checks on the final amalgamated file |
 
-## Amalgamation Process (`amalgamate.py`)
+## Amalgamation Process (`build_amalgamated_dataset.py`)
 
 ### How it works
 
@@ -53,7 +53,7 @@ The notebook performs six checks on the amalgamated data:
 
 ### Check 1 — Row Count Validation
 
-Compares the number of rows in each source parquet file against the `SOURCE_YEAR` counts in the final dataset. Years 2010–2019 match exactly. Years 2020–2025 show expected mismatches because each year folder can contain multiple parquet files (e.g. old-form and new-form variants), while `amalgamate.py` selects only the primary file via `find_main_data_file()`.
+Compares the number of rows in each source parquet file against the `SOURCE_YEAR` counts in the final dataset. Years 2010–2019 match exactly. Years 2020–2025 show expected mismatches because each year folder can contain multiple parquet files (e.g. old-form and new-form variants), while `build_amalgamated_dataset.py` selects only the primary file via `find_main_data_file()`.
 
 ### Check 2 — Expected Years Validation ✓
 

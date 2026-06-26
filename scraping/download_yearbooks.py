@@ -5,14 +5,14 @@ import requests
 from bs4 import BeautifulSoup
 import zipfile
 
-from manifest_state import ManifestState
+from download_manifest import ManifestState
 
 # Configs
 BASE = "https://ohss.dhs.gov"
 ROOT = "https://ohss.dhs.gov/topics/immigration/yearbook"
 FILE_EXTS = (".pdf", ".xlsx", ".xls", ".zip")
 
-OUTDIR = Path("data/immigration_yearbook")
+OUTDIR = Path.home() / "Desktop" / "ohss_yearbooks"
 MANIFEST = "state/yearbook_manifest.csv"
 MODE = "safe"
 POLITE_DELAY = 0.5
